@@ -33,3 +33,6 @@ I:\BikersWorldApp\BikersWorld\obj\Debug\BikersWorld.staffManagement.resources
 I:\BikersWorldApp\BikersWorld\obj\Debug\BikersWorld.frmLogin.resources
 I:\BikersWorldApp\BikersWorld\obj\Debug\BikersWorld.Properties.Resources.resources
 I:\BikersWorldApp\BikersWorld\obj\Debug\BikersWorld.csproj.GenerateResource.Cache
+I:\BikersWorldC-App\BikersWorld\bin\Debug\BikersWorld.exe.config
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.exe
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.pdb

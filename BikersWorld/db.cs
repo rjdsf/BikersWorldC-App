@@ -53,7 +53,7 @@ namespace BikersWorld
                 cmd.Parameters.AddWithValue("@pass", hashedPassword);
 
                 Connection.Open();
-           
+           //this bit doesnt work
                 MySqlDataReader reader = cmd.ExecuteReader();
                 int count = 0;
                 while (reader.Read()) { count += 1; }
