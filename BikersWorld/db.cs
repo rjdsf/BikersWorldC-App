@@ -78,38 +78,41 @@ namespace BikersWorld
         }
 
         //query db to see if entered credentials exist within db
-        private List<String>[] login (string username, string password)
+        private bool login (string username, string password)
         {
             string hashedPassword = getMD5Hash(password);
                        
             string query = "SELECT * FROM login WHERE (username = '" + username + "' AND password = '" + hashedPassword + "');";
             
 
-            List<string>[] list = new List<string>[3];
-            list[0] = new List<string>();
-            list[1] = new List<string>();
-            list[2] = new List<string>();
+            
 
             if (this.openConnection() == true)
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
+                int count = 0;
                 while (dataReader.Read())
                 {
-                    list[0].Add(dataReader["login_id"] + "");
-                    list[1].Add(dataReader["username"] + "");
-                    list[2].Add(dataReader["password"] + "");
+                    count++;
                 }
 
                 dataReader.Close();
                 this.closeConnection();
-                return list;
+                if (count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
 
 
             }
             else {
-                return list;
+                return false;
 
             }
 
@@ -120,15 +123,17 @@ namespace BikersWorld
         //Authenticate users login credentials
         public bool authenticate(string username, string password)
         {
-            List<String>[] users = new List<string>[3];
-            users = login(username, password);
-            //if returning list contains a user then the login is authenticated
-            if (users.Any())
-            {
-                MessageBox.Show("Authenicated");
-            }
 
-            return true;
+            bool users = login(username, password);
+            //if returning list contains a user then the login is authenticated
+            if (users)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
 
         }

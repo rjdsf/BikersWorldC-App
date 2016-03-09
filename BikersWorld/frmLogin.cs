@@ -55,6 +55,14 @@ namespace BikersWorld
             
             db connection = new db();
             bool auth = connection.authenticate(txtUsername.Text, txtPassword.Text);
+            if (auth)
+            {
+                MessageBox.Show("Welcome");
+            }
+            else
+            {
+                MessageBox.Show("go away");
+            }
 
 
 
