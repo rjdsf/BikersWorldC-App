@@ -36,3 +36,12 @@ I:\BikersWorldApp\BikersWorld\obj\Debug\BikersWorld.csproj.GenerateResource.Cach
 I:\BikersWorldC-App\BikersWorld\bin\Debug\BikersWorld.exe.config
 I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.exe
 I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.pdb
+I:\BikersWorldC-App\BikersWorld\bin\Debug\BikersWorld.exe
+I:\BikersWorldC-App\BikersWorld\bin\Debug\BikersWorld.pdb
+I:\BikersWorldC-App\BikersWorld\bin\Debug\MySql.Data.dll
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csprojResolveAssemblyReference.cache
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.Management.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.staffManagement.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmLogin.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.Properties.Resources.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csproj.GenerateResource.Cache
