@@ -63,10 +63,7 @@ namespace BikersWorld
             {
                 MessageBox.Show("go away");
             }
-
-
-
-
+            
         }
 
        
