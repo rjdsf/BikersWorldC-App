@@ -12,17 +12,20 @@ namespace BikersWorld
 {
     public class db
     {
+        //db connection variables
         private MySqlConnection connection;
         private string server;
         private string database;
         private string uid;
         private string password;
 
+        // default constructor
         public db() {
             Initialize();
 
         }
 
+        //build connection to db
         private void Initialize()
         {
             server = "localhost";
@@ -36,7 +39,7 @@ namespace BikersWorld
         }
 
 
-
+        //open connection to db
         private bool openConnection()
         {
             try
@@ -59,7 +62,7 @@ namespace BikersWorld
             }
         }
 
-
+        // close connection to db
         private bool closeConnection()
         {
             try  {
@@ -74,12 +77,11 @@ namespace BikersWorld
 
         }
 
-
+        //query db to see if entered credentials exist within db
         private List<String>[] login (string username, string password)
         {
             string hashedPassword = getMD5Hash(password);
-
-            
+                       
             string query = "SELECT * FROM login WHERE (username = '" + username + "' AND password = '" + hashedPassword + "');";
             
 
@@ -114,11 +116,13 @@ namespace BikersWorld
 
         }
 
+
+        //Authenticate users login credentials
         public bool authenticate(string username, string password)
         {
             List<String>[] users = new List<string>[3];
             users = login(username, password);
-
+            //if returning list contains a user then the login is authenticated
             if (users.Any())
             {
                 MessageBox.Show("Authenicated");
@@ -129,12 +133,7 @@ namespace BikersWorld
 
         }
 
-
-    
-
-     
-
-
+        
         // take a string value and return it as a MD5 hashed string
         private string getMD5Hash(string strPassword) {
 
