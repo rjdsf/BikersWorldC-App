@@ -52,10 +52,9 @@ namespace BikersWorld
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
-
-            db hello = new db();
-            hello.login("sarasmith", "admin");
+            
+            db connection = new db();
+            bool auth = connection.authenticate(txtUsername.Text, txtPassword.Text);
 
 
 
