@@ -12,9 +12,7 @@ namespace BikersWorld
         protected string _Username;
         protected string _Password;
         protected int _JobRoleID;
-        
-
-
+      
         public int EmployeeID
         {
             get

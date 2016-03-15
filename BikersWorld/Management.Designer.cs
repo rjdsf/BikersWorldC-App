@@ -1,6 +1,6 @@
 ﻿namespace BikersWorld
 {
-    partial class Management
+    partial class frmManagement
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.staffM = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStaffManagement = new System.Windows.Forms.Button();
+            this.btnProductsManagement = new System.Windows.Forms.Button();
+            this.gbManagement = new System.Windows.Forms.GroupBox();
+            this.btnSupplierManagement = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnEmployeeReports = new System.Windows.Forms.Button();
+            this.btnJobReports = new System.Windows.Forms.Button();
+            this.btnSalesReports = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnProcessJob = new System.Windows.Forms.Button();
+            this.btnProcessSale = new System.Windows.Forms.Button();
+            this.btnStockControl = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,61 +53,61 @@
             this.jobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.businsTasksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.processSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proceessJobToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox1.SuspendLayout();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gbManagement.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // staffM
+            // btnStaffManagement
             // 
-            this.staffM.Location = new System.Drawing.Point(23, 41);
-            this.staffM.Name = "staffM";
-            this.staffM.Size = new System.Drawing.Size(75, 23);
-            this.staffM.TabIndex = 0;
-            this.staffM.Text = "&Staff";
-            this.staffM.UseVisualStyleBackColor = true;
-            this.staffM.Click += new System.EventHandler(this.button1_Click);
+            this.btnStaffManagement.Location = new System.Drawing.Point(23, 41);
+            this.btnStaffManagement.Name = "btnStaffManagement";
+            this.btnStaffManagement.Size = new System.Drawing.Size(75, 23);
+            this.btnStaffManagement.TabIndex = 0;
+            this.btnStaffManagement.Text = "&Staff";
+            this.btnStaffManagement.UseVisualStyleBackColor = true;
+            this.btnStaffManagement.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnProductsManagement
             // 
-            this.button2.Location = new System.Drawing.Point(23, 70);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "&Products";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnProductsManagement.Location = new System.Drawing.Point(23, 70);
+            this.btnProductsManagement.Name = "btnProductsManagement";
+            this.btnProductsManagement.Size = new System.Drawing.Size(75, 23);
+            this.btnProductsManagement.TabIndex = 1;
+            this.btnProductsManagement.Text = "&Products";
+            this.btnProductsManagement.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gbManagement
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.staffM);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Location = new System.Drawing.Point(18, 40);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(135, 158);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Management";
+            this.gbManagement.Controls.Add(this.btnSupplierManagement);
+            this.gbManagement.Controls.Add(this.btnStaffManagement);
+            this.gbManagement.Controls.Add(this.btnProductsManagement);
+            this.gbManagement.Location = new System.Drawing.Point(18, 40);
+            this.gbManagement.Name = "gbManagement";
+            this.gbManagement.Size = new System.Drawing.Size(135, 158);
+            this.gbManagement.TabIndex = 2;
+            this.gbManagement.TabStop = false;
+            this.gbManagement.Text = "Management";
             // 
-            // button1
+            // btnSupplierManagement
             // 
-            this.button1.Location = new System.Drawing.Point(23, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "S&uppliers";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSupplierManagement.Location = new System.Drawing.Point(23, 99);
+            this.btnSupplierManagement.Name = "btnSupplierManagement";
+            this.btnSupplierManagement.Size = new System.Drawing.Size(75, 23);
+            this.btnSupplierManagement.TabIndex = 1;
+            this.btnSupplierManagement.Text = "S&uppliers";
+            this.btnSupplierManagement.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.btnEmployeeReports);
+            this.groupBox2.Controls.Add(this.btnJobReports);
+            this.groupBox2.Controls.Add(this.btnSalesReports);
             this.groupBox2.Location = new System.Drawing.Point(18, 239);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(135, 158);
@@ -116,39 +116,39 @@
             this.groupBox2.Text = "Reports";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // button5
+            // btnEmployeeReports
             // 
-            this.button5.Location = new System.Drawing.Point(15, 99);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "&Employees";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnEmployeeReports.Location = new System.Drawing.Point(25, 99);
+            this.btnEmployeeReports.Name = "btnEmployeeReports";
+            this.btnEmployeeReports.Size = new System.Drawing.Size(75, 23);
+            this.btnEmployeeReports.TabIndex = 2;
+            this.btnEmployeeReports.Text = "&Employees";
+            this.btnEmployeeReports.UseVisualStyleBackColor = true;
+            this.btnEmployeeReports.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // btnJobReports
             // 
-            this.button4.Location = new System.Drawing.Point(15, 70);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "&Jobs";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnJobReports.Location = new System.Drawing.Point(25, 70);
+            this.btnJobReports.Name = "btnJobReports";
+            this.btnJobReports.Size = new System.Drawing.Size(75, 23);
+            this.btnJobReports.TabIndex = 1;
+            this.btnJobReports.Text = "&Jobs";
+            this.btnJobReports.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnSalesReports
             // 
-            this.button3.Location = new System.Drawing.Point(15, 41);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "S&ales";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSalesReports.Location = new System.Drawing.Point(25, 41);
+            this.btnSalesReports.Name = "btnSalesReports";
+            this.btnSalesReports.Size = new System.Drawing.Size(75, 23);
+            this.btnSalesReports.TabIndex = 0;
+            this.btnSalesReports.Text = "S&ales";
+            this.btnSalesReports.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.btnProcessJob);
+            this.groupBox3.Controls.Add(this.btnProcessSale);
+            this.groupBox3.Controls.Add(this.btnStockControl);
             this.groupBox3.Location = new System.Drawing.Point(190, 139);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(135, 158);
@@ -156,41 +156,42 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Business Tasks";
             // 
-            // button8
+            // btnProcessJob
             // 
-            this.button8.Location = new System.Drawing.Point(13, 113);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(109, 23);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Process Jo&b";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnProcessJob.Location = new System.Drawing.Point(13, 113);
+            this.btnProcessJob.Name = "btnProcessJob";
+            this.btnProcessJob.Size = new System.Drawing.Size(109, 23);
+            this.btnProcessJob.TabIndex = 2;
+            this.btnProcessJob.Text = "Process Jo&b";
+            this.btnProcessJob.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnProcessSale
             // 
-            this.button7.Location = new System.Drawing.Point(13, 69);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 23);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "P&rocess Sale";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnProcessSale.Location = new System.Drawing.Point(13, 69);
+            this.btnProcessSale.Name = "btnProcessSale";
+            this.btnProcessSale.Size = new System.Drawing.Size(109, 23);
+            this.btnProcessSale.TabIndex = 1;
+            this.btnProcessSale.Text = "P&rocess Sale";
+            this.btnProcessSale.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnStockControl
             // 
-            this.button6.Location = new System.Drawing.Point(13, 28);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(109, 23);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Stock &Control";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnStockControl.Location = new System.Drawing.Point(13, 28);
+            this.btnStockControl.Name = "btnStockControl";
+            this.btnStockControl.Size = new System.Drawing.Size(109, 23);
+            this.btnStockControl.TabIndex = 0;
+            this.btnStockControl.Text = "Stock &Control";
+            this.btnStockControl.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnLogout
             // 
-            this.button9.Location = new System.Drawing.Point(272, 374);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(53, 23);
-            this.button9.TabIndex = 5;
-            this.button9.Text = "Log O&ut";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnLogout.Location = new System.Drawing.Point(272, 374);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(53, 23);
+            this.btnLogout.TabIndex = 5;
+            this.btnLogout.Text = "Log O&ut";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // menuStrip1
             // 
@@ -263,19 +264,19 @@
             // salesToolStripMenuItem
             // 
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
-            this.salesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salesToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.salesToolStripMenuItem.Text = "S&ales";
             // 
             // jobsToolStripMenuItem
             // 
             this.jobsToolStripMenuItem.Name = "jobsToolStripMenuItem";
-            this.jobsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.jobsToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.jobsToolStripMenuItem.Text = "&Jobs";
             // 
             // employeesToolStripMenuItem
             // 
             this.employeesToolStripMenuItem.Name = "employeesToolStripMenuItem";
-            this.employeesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.employeesToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.employeesToolStripMenuItem.Text = "&Employees";
             // 
             // businsTasksToolStripMenuItem
@@ -288,46 +289,47 @@
             this.businsTasksToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.businsTasksToolStripMenuItem.Text = "Business Tasks";
             // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
             // stockControlToolStripMenuItem
             // 
             this.stockControlToolStripMenuItem.Name = "stockControlToolStripMenuItem";
-            this.stockControlToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.stockControlToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.stockControlToolStripMenuItem.Text = "Stock &Control";
             this.stockControlToolStripMenuItem.Click += new System.EventHandler(this.stockControlToolStripMenuItem_Click);
             // 
             // processSaleToolStripMenuItem
             // 
             this.processSaleToolStripMenuItem.Name = "processSaleToolStripMenuItem";
-            this.processSaleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.processSaleToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.processSaleToolStripMenuItem.Text = "P&rocess Sale";
             // 
             // proceessJobToolStripMenuItem
             // 
             this.proceessJobToolStripMenuItem.Name = "proceessJobToolStripMenuItem";
-            this.proceessJobToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.proceessJobToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.proceessJobToolStripMenuItem.Text = "Proceess jo&b";
             // 
-            // Management
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // frmManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 424);
-            this.Controls.Add(this.button9);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbManagement);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Management";
+            this.Name = "frmManagement";
             this.Text = "Management";
             this.Load += new System.EventHandler(this.Management_Load);
-            this.groupBox1.ResumeLayout(false);
+            this.gbManagement.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
@@ -339,19 +341,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Button staffM;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnStaffManagement;
+        private System.Windows.Forms.Button btnProductsManagement;
+        private System.Windows.Forms.GroupBox gbManagement;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSupplierManagement;
+        private System.Windows.Forms.Button btnEmployeeReports;
+        private System.Windows.Forms.Button btnJobReports;
+        private System.Windows.Forms.Button btnSalesReports;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnProcessJob;
+        private System.Windows.Forms.Button btnProcessSale;
+        private System.Windows.Forms.Button btnStockControl;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem managementToolStripMenuItem;

@@ -12,7 +12,6 @@ using MySql.Data.MySqlClient;
 #region ToDoList
     /*
         Create help section
-        code login functionality 
     */
 #endregion
 
@@ -30,16 +29,19 @@ namespace BikersWorld
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //display application info in msgbox
             MessageBox.Show("Bikers World EPOS was created by Students of Central College Nottingham as part of a .NET Assignment", "ABOUT");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Close application
             Application.Exit();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            //Close application
             Application.Exit();
         }
 
@@ -52,17 +54,22 @@ namespace BikersWorld
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+            // instantiate db class
             db connection = new db();
-            bool auth = connection.authenticate(txtUsername.Text, txtPassword.Text);
-            if (auth)
+
+            //test is fields contaion data
+            if (txtUsername.Text.Length > 0 && txtPassword.Text.Length > 0)
             {
-                MessageBox.Show("Welcome");
+                this.Hide();
+                connection.authenticate(txtUsername.Text, txtPassword.Text);
             }
             else
             {
-                MessageBox.Show("go away");
+                MessageBox.Show("Please complete your login credentials in order to login!");
             }
+
+
+            
             
         }
 
