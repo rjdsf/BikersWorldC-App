@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace BikersWorld
 {
-    public partial class Management : Form
+    public partial class frmManagement : Form
     {
-        public Management()
+        public frmManagement()
         {
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,6 +51,11 @@ namespace BikersWorld
         private void stockControlToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
