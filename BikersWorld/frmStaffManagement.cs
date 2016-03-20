@@ -84,14 +84,6 @@ namespace BikersWorld
             
         }
 
-        private void dgvStaffList_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-         
-
-        
-
-        }
 
         private void dgvStaffList_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -253,5 +245,7 @@ namespace BikersWorld
             AppTools.disableControlsGrb(grbEdit);
 
         }
+
+        
     }
 }

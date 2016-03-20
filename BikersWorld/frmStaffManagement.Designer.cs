@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grbSearch = new System.Windows.Forms.GroupBox();
+            this.btnReset = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.labelLastName = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
@@ -39,6 +40,8 @@
             this.dgvStaffList = new System.Windows.Forms.DataGridView();
             this.txtFirstNameEdit = new System.Windows.Forms.TextBox();
             this.grbEdit = new System.Windows.Forms.GroupBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.cboJobRoleEdit = new System.Windows.Forms.ComboBox();
             this.lblJovRoleEdit = new System.Windows.Forms.Label();
@@ -64,10 +67,7 @@
             this.grbOptions = new System.Windows.Forms.GroupBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
             this.brnNew = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.grbSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaffList)).BeginInit();
             this.grbEdit.SuspendLayout();
@@ -90,6 +90,16 @@
             this.grbSearch.TabIndex = 0;
             this.grbSearch.TabStop = false;
             this.grbSearch.Text = "Search";
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(222, 30);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 7;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSearch
             // 
@@ -154,12 +164,13 @@
             this.dgvStaffList.AllowUserToAddRows = false;
             this.dgvStaffList.AllowUserToDeleteRows = false;
             this.dgvStaffList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStaffList.GridColor = System.Drawing.Color.DarkGray;
             this.dgvStaffList.Location = new System.Drawing.Point(12, 152);
             this.dgvStaffList.Name = "dgvStaffList";
             this.dgvStaffList.ReadOnly = true;
+            this.dgvStaffList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStaffList.Size = new System.Drawing.Size(573, 188);
             this.dgvStaffList.TabIndex = 1;
-            this.dgvStaffList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaffList_CellContentClick);
             this.dgvStaffList.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvStaffList_RowHeaderMouseClick);
             // 
             // txtFirstNameEdit
@@ -202,6 +213,28 @@
             this.grbEdit.TabIndex = 4;
             this.grbEdit.TabStop = false;
             this.grbEdit.Text = "Staff N: ";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(469, 214);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 30;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(469, 184);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.TabIndex = 29;
+            this.btnLogin.Text = "Logins";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Visible = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnSubmit
             // 
@@ -437,16 +470,6 @@
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(222, 30);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
-            this.btnReset.TabIndex = 7;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
             // brnNew
             // 
             this.brnNew.Location = new System.Drawing.Point(445, 54);
@@ -456,28 +479,6 @@
             this.brnNew.Text = "New";
             this.brnNew.UseVisualStyleBackColor = true;
             this.brnNew.Click += new System.EventHandler(this.brnNew_Click);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(469, 184);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 29;
-            this.btnLogin.Text = "Logins";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Visible = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(469, 214);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 30;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Visible = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmStaffManagement
             // 
