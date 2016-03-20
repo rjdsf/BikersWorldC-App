@@ -1,0 +1,4 @@
+::1 - - [19/Mar/2016:23:06:19 +0000] "GET /phpmyadmin HTTP/1.1" 301 241
+::1 - - [19/Mar/2016:23:06:19 +0000] "GET /phpmyadmin/ HTTP/1.1" 200 7423
+::1 - - [19/Mar/2016:23:06:19 +0000] "GET /phpmyadmin/phpmyadmin.css.php?server=1&token=fa7516ed4930fa1e96ca5914b569c635&js_frame=right&nocache=3975629199 HTTP/1.1" 200 41672
+::1 - - [19/Mar/2016:23:06:19 +0000] "GET /phpmyadmin/js/messages.php?lang=en&db=&token=fa7516ed4930fa1e96ca5914b569c635 HTTP/1.1" 200 4934
