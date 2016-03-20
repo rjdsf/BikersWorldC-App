@@ -21,7 +21,13 @@ namespace BikersWorld
         private void button1_Click(object sender, EventArgs e)
         {
 
-        }
+            frmStaffManagement formStaffManagement = new frmStaffManagement();
+
+            formStaffManagement.Show();
+
+
+
+        }   
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
