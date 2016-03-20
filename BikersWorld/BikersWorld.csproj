@@ -72,6 +72,12 @@
     <Compile Include="frmLogins.Designer.cs">
       <DependentUpon>frmLogins.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStockControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockControl.Designer.cs">
+      <DependentUpon>frmStockControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     <EmbeddedResource Include="frmLogins.resx">
       <DependentUpon>frmLogins.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmStockControl.resx">
+      <DependentUpon>frmStockControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +131,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

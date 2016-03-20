@@ -18,7 +18,7 @@ namespace BikersWorld
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnStaffManagement_Click(object sender, EventArgs e)
         {
 
             frmStaffManagement formStaffManagement = new frmStaffManagement();
@@ -29,15 +29,7 @@ namespace BikersWorld
 
         }   
 
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -62,6 +54,12 @@ namespace BikersWorld
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnStockControl_Click(object sender, EventArgs e)
+        {
+            frmStockControl StockControl = new frmStockControl();
+            StockControl.ShowDialog();
         }
     }
 }
