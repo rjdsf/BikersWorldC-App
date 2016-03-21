@@ -12,3 +12,4 @@ I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.exe
 I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.pdb
 I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csprojResolveAssemblyReference.cache
 I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmStockControl.resources
+I:\BikersWorldC-App\BikersWorld\bin\Debug\DocX.dll

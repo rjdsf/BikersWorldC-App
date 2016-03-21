@@ -148,6 +148,7 @@
             this.btnPrintStockLevels.TabIndex = 2;
             this.btnPrintStockLevels.Text = "&Print Stock Check Report";
             this.btnPrintStockLevels.UseVisualStyleBackColor = true;
+            this.btnPrintStockLevels.Click += new System.EventHandler(this.btnPrintStockLevels_Click);
             // 
             // btnAdjustStock
             // 
