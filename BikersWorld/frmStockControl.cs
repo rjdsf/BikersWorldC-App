@@ -239,7 +239,7 @@ namespace BikersWorld
                     MessageBox.Show("Please select if you are adding stock or amending stock quantity?", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
-                string refresh = "SELECT * FROM items";
+                string refresh = "SELECT * FROM items LEFT JOIN suppliers ON items.supplier_id = suppliers.supplier_id";
                 dt = accessDB.getProducts(refresh);
                 dgvProductInformation.DataSource = dt;
                 hideUnwantedColumns();
