@@ -137,9 +137,13 @@ namespace BikersWorld
                                 break;
                             case 2:
                                 //instantiate technician form
+                                frmTechnicianHub technician = new frmTechnicianHub();
+                                technician.ShowDialog();
                                 break;
                             default:
                                 //instantiate sales form
+                                frmSales sales = new frmSales();
+                                sales.ShowDialog();
                                 break;
                         }
 
