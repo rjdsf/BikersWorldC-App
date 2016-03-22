@@ -78,7 +78,8 @@
             this.dgvOpenJobs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOpenJobs.Location = new System.Drawing.Point(0, 27);
             this.dgvOpenJobs.Name = "dgvOpenJobs";
-            this.dgvOpenJobs.Size = new System.Drawing.Size(772, 344);
+            this.dgvOpenJobs.ReadOnly = true;
+            this.dgvOpenJobs.Size = new System.Drawing.Size(772, 341);
             this.dgvOpenJobs.TabIndex = 2;
             // 
             // frmOpenJobs
@@ -92,6 +93,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmOpenJobs";
             this.Text = "Open Jobs";
+            this.Load += new System.EventHandler(this.frmOpenJobs_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOpenJobs)).EndInit();

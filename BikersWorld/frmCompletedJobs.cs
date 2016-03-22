@@ -18,6 +18,9 @@ namespace BikersWorld
 {
     public partial class frmCompletedJobs : Form
     {
+        job job = new job();
+        DataTable dt = new DataTable();
+
         public frmCompletedJobs()
         {
             InitializeComponent();
@@ -34,6 +37,13 @@ namespace BikersWorld
         }
 
         private void frmCompletedJobs_Load(object sender, EventArgs e)
+        {
+
+            dt = job.getCompletedJobs();
+            dgvCompletedJobs.DataSource = dt;
+        }
+
+        private void dgvCompletedJobs_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

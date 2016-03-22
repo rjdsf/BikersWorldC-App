@@ -33,7 +33,6 @@
             this.btnNewJob = new System.Windows.Forms.Button();
             this.btnCompletedJobs = new System.Windows.Forms.Button();
             this.btnNewCustomer = new System.Windows.Forms.Button();
-            this.btnManagement = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,11 +44,8 @@
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewCustomersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.managementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.managementToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lblJobs = new System.Windows.Forms.Label();
             this.lblCustomer = new System.Windows.Forms.Label();
-            this.lblManagement = new System.Windows.Forms.Label();
             this.btnViewCustomers = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -112,24 +108,12 @@
             this.btnNewCustomer.UseVisualStyleBackColor = true;
             this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
             // 
-            // btnManagement
-            // 
-            this.btnManagement.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManagement.Location = new System.Drawing.Point(30, 249);
-            this.btnManagement.Name = "btnManagement";
-            this.btnManagement.Size = new System.Drawing.Size(122, 45);
-            this.btnManagement.TabIndex = 6;
-            this.btnManagement.Text = "&Management";
-            this.btnManagement.UseVisualStyleBackColor = true;
-            this.btnManagement.Click += new System.EventHandler(this.btnManagement_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.jobsToolStripMenuItem,
-            this.customerToolStripMenuItem,
-            this.managementToolStripMenuItem});
+            this.customerToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(480, 24);
@@ -213,21 +197,6 @@
             this.viewCustomersToolStripMenuItem.Text = "View Custome&rs";
             this.viewCustomersToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersToolStripMenuItem_Click);
             // 
-            // managementToolStripMenuItem
-            // 
-            this.managementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.managementToolStripMenuItem1});
-            this.managementToolStripMenuItem.Name = "managementToolStripMenuItem";
-            this.managementToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
-            this.managementToolStripMenuItem.Text = "Management Tool&s";
-            this.managementToolStripMenuItem.Click += new System.EventHandler(this.managementToolStripMenuItem_Click);
-            // 
-            // managementToolStripMenuItem1
-            // 
-            this.managementToolStripMenuItem1.Name = "managementToolStripMenuItem1";
-            this.managementToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
-            this.managementToolStripMenuItem1.Text = "O&pen Management";
-            // 
             // lblJobs
             // 
             this.lblJobs.AutoSize = true;
@@ -248,16 +217,6 @@
             this.lblCustomer.TabIndex = 8;
             this.lblCustomer.Text = "Customer";
             // 
-            // lblManagement
-            // 
-            this.lblManagement.AutoSize = true;
-            this.lblManagement.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagement.Location = new System.Drawing.Point(33, 232);
-            this.lblManagement.Name = "lblManagement";
-            this.lblManagement.Size = new System.Drawing.Size(79, 14);
-            this.lblManagement.TabIndex = 9;
-            this.lblManagement.Text = "Management";
-            // 
             // btnViewCustomers
             // 
             this.btnViewCustomers.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -272,17 +231,18 @@
             // btnLogOut
             // 
             this.btnLogOut.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Location = new System.Drawing.Point(305, 303);
+            this.btnLogOut.Location = new System.Drawing.Point(303, 239);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(82, 30);
             this.btnLogOut.TabIndex = 7;
             this.btnLogOut.Text = "&Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(392, 303);
+            this.btnExit.Location = new System.Drawing.Point(390, 239);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(82, 30);
             this.btnExit.TabIndex = 8;
@@ -295,14 +255,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(480, 336);
+            this.ClientSize = new System.Drawing.Size(480, 277);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnViewCustomers);
-            this.Controls.Add(this.lblManagement);
             this.Controls.Add(this.lblCustomer);
             this.Controls.Add(this.lblJobs);
-            this.Controls.Add(this.btnManagement);
             this.Controls.Add(this.btnNewCustomer);
             this.Controls.Add(this.btnCompletedJobs);
             this.Controls.Add(this.btnNewJob);
@@ -329,7 +287,6 @@
         private System.Windows.Forms.Button btnNewJob;
         private System.Windows.Forms.Button btnCompletedJobs;
         private System.Windows.Forms.Button btnNewCustomer;
-        private System.Windows.Forms.Button btnManagement;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem jobsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logNewJobToolStripMenuItem;
@@ -337,11 +294,8 @@
         private System.Windows.Forms.ToolStripMenuItem viewCompletedJobsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewCustomerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem managementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem managementToolStripMenuItem1;
         private System.Windows.Forms.Label lblJobs;
         private System.Windows.Forms.Label lblCustomer;
-        private System.Windows.Forms.Label lblManagement;
         private System.Windows.Forms.Button btnViewCustomers;
         private System.Windows.Forms.ToolStripMenuItem viewCustomersToolStripMenuItem;
         private System.Windows.Forms.Button btnLogOut;

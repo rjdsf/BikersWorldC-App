@@ -59,7 +59,7 @@ namespace BikersWorld
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void btnOpenJobs_Click(object sender, EventArgs e)
@@ -114,6 +114,11 @@ namespace BikersWorld
         {
             frmManagement frm = new frmManagement();
             frm.Show();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -7,6 +8,9 @@ namespace BikersWorld
 {
     public class job
     {
+        dbEW accessDB = new dbEW();
+        DataTable dt = new DataTable();
+
         public int JobID
         {
             get
@@ -105,5 +109,25 @@ namespace BikersWorld
             {
             }
         }
+
+        public DataTable getOpenJobs()
+        {
+            string query = "select * FROM jobs WHERE job_open_close = 1";
+            dt = accessDB.grabAll(query);
+            return dt;
+
+        }
+
+        public DataTable getCompletedJobs()
+        {
+            string query = "select * FROM jobs WHERE job_open_close = 2";
+            dt = accessDB.grabAll(query);
+            return dt;
+
+        }
+
+
+
     }
+
 }

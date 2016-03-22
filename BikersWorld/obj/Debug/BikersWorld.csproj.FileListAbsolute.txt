@@ -31,3 +31,4 @@ C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersW
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmLogin.resources
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.Properties.Resources.resources
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csproj.GenerateResource.Cache
+C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmViewCustomers.resources
