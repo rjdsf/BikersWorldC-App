@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppTools.cs" />
+    <Compile Include="dbEW.cs" />
     <Compile Include="frmAddNewCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTechnicianHub.resx">
       <DependentUpon>frmTechnicianHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewCustomers.resx">
+      <DependentUpon>frmViewCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.cs</DependentUpon>

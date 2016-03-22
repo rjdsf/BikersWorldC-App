@@ -18,6 +18,9 @@ namespace BikersWorld
 {
     public partial class frmOpenJobs : Form
     {
+        job job = new job();
+        DataTable dt = new DataTable();
+
         public frmOpenJobs()
         {
             InitializeComponent();
@@ -36,6 +39,17 @@ namespace BikersWorld
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void dgvOpenJobs_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmOpenJobs_Load(object sender, EventArgs e)
+        {
+            dt = job.getOpenJobs();
+            dgvOpenJobs.DataSource = dt;
         }
     }
 }

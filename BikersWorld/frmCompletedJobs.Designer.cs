@@ -77,8 +77,10 @@
             this.dgvCompletedJobs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCompletedJobs.Location = new System.Drawing.Point(0, 24);
             this.dgvCompletedJobs.Name = "dgvCompletedJobs";
+            this.dgvCompletedJobs.ReadOnly = true;
             this.dgvCompletedJobs.Size = new System.Drawing.Size(772, 350);
             this.dgvCompletedJobs.TabIndex = 2;
+            this.dgvCompletedJobs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompletedJobs_CellContentClick);
             // 
             // frmCompletedJobs
             // 
