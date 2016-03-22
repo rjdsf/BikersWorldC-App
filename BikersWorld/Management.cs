@@ -67,5 +67,11 @@ namespace BikersWorld
             frmTechnicianHub Technician = new frmTechnicianHub();
             Technician.ShowDialog();
         }
+
+        private void btnProcessSale_Click(object sender, EventArgs e)
+        {
+            frmSales sales = new frmSales();
+            sales.ShowDialog();
+        }
     }
 }

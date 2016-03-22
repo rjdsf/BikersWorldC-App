@@ -32,3 +32,11 @@ C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersW
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.Properties.Resources.resources
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csproj.GenerateResource.Cache
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmViewCustomers.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmCompletedJobs.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmOpenJobs.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmTechnicianHub.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmViewCustomers.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmCheckCustomers.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmOrders1.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmSales.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmAddCustomer.resources
