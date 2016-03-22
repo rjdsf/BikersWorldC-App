@@ -61,5 +61,11 @@ namespace BikersWorld
             frmStockControl StockControl = new frmStockControl();
             StockControl.ShowDialog();
         }
+
+        private void btnProcessJob_Click(object sender, EventArgs e)
+        {
+            frmTechnicianHub Technician = new frmTechnicianHub();
+            Technician.ShowDialog();
+        }
     }
 }
