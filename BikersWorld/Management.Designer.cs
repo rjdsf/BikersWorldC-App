@@ -162,6 +162,7 @@
             this.btnProcessJob.TabIndex = 2;
             this.btnProcessJob.Text = "Process Jo&b";
             this.btnProcessJob.UseVisualStyleBackColor = true;
+            this.btnProcessJob.Click += new System.EventHandler(this.btnProcessJob_Click);
             // 
             // btnProcessSale
             // 
@@ -285,7 +286,7 @@
             this.processSaleToolStripMenuItem,
             this.proceessJobToolStripMenuItem});
             this.businsTasksToolStripMenuItem.Name = "businsTasksToolStripMenuItem";
-            this.businsTasksToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.businsTasksToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.businsTasksToolStripMenuItem.Text = "Business Tasks";
             // 
             // stockControlToolStripMenuItem
