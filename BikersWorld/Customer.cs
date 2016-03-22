@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -7,6 +8,11 @@ namespace BikersWorld
 {
     public class Customer : Person
     {
+        dbEW accessDB = new dbEW();
+        DataTable dt = new DataTable();
+
+        public Customer(){}
+
         private int _CustomerID;
 
 
@@ -43,8 +49,13 @@ namespace BikersWorld
 
 
      }
-   
-    
+
+        public DataTable getCustomers()
+        {
+            string query = "select * FROM customer";
+            dt = accessDB.grabAll(query);
+            return dt;
+        }
     
     
     }

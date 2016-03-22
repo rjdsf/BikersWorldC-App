@@ -50,6 +50,10 @@
     <StartupObject>BikersWorld.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocX, Version=1.0.0.19, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocX.1.0.0.19\lib\net40\DocX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>.\MySql.Data.dll</HintPath>
     </Reference>
@@ -66,17 +70,54 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppTools.cs" />
+    <Compile Include="dbEW.cs" />
+    <Compile Include="frmAddNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewCustomer.Designer.cs">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompletedJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompletedJobs.Designer.cs">
+      <DependentUpon>frmCompletedJobs.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogins.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogins.Designer.cs">
       <DependentUpon>frmLogins.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogNewJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogNewJob.Designer.cs">
+      <DependentUpon>frmLogNewJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpenJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpenJobs.Designer.cs">
+      <DependentUpon>frmOpenJobs.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStockControl.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmStockControl.Designer.cs">
       <DependentUpon>frmStockControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTechnicianHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTechnicianHub.Designer.cs">
+      <DependentUpon>frmTechnicianHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewCustomers.Designer.cs">
+      <DependentUpon>frmViewCustomers.cs</DependentUpon>
     </Compile>
     <Compile Include="Management.cs">
       <SubType>Form</SubType>
@@ -106,11 +147,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sale.cs" />
     <Compile Include="Supplier.cs" />
+    <EmbeddedResource Include="frmCompletedJobs.resx">
+      <DependentUpon>frmCompletedJobs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogins.resx">
       <DependentUpon>frmLogins.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOpenJobs.resx">
+      <DependentUpon>frmOpenJobs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStockControl.resx">
       <DependentUpon>frmStockControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTechnicianHub.resx">
+      <DependentUpon>frmTechnicianHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewCustomers.resx">
+      <DependentUpon>frmViewCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
@@ -129,9 +182,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -166,6 +221,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

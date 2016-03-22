@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Novacode;
+using System.Diagnostics;
 
 namespace BikersWorld
 {
@@ -237,7 +239,7 @@ namespace BikersWorld
                     MessageBox.Show("Please select if you are adding stock or amending stock quantity?", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
-                string refresh = "SELECT * FROM items";
+                string refresh = "SELECT * FROM items LEFT JOIN suppliers ON items.supplier_id = suppliers.supplier_id";
                 dt = accessDB.getProducts(refresh);
                 dgvProductInformation.DataSource = dt;
                 hideUnwantedColumns();
@@ -249,7 +251,55 @@ namespace BikersWorld
                 txtStockAdjust.Focus();
             }
         }
-
         
+        private void btnPrintStockLevels_Click(object sender, EventArgs e)
+        {
+            // inform user where file is to be saved
+            MessageBox.Show("This document will be saved as default to your desktop", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string fileName = path + "\\StockReport.docx";
+            var doc = DocX.Create(fileName);
+            var company = doc.InsertParagraph("Biker's World");
+            company.StyleName = "Heading1";
+            doc.InsertParagraph();
+            doc.InsertParagraph("Report Type: \tStock Report");
+            doc.InsertParagraph();
+            doc.InsertParagraph("Printed: \t" + DateTime.Now);
+            doc.InsertParagraph();
+            doc.InsertParagraph("Description: \tThis report details all items in stock at the time of print");
+            doc.InsertParagraph();
+
+
+            string query = "SELECT item_id, item_name, description, quantity, supplier_name FROM items LEFT JOIN suppliers ON items.supplier_id = suppliers.supplier_id";
+            dt = accessDB.getProducts(query);
+            int rows = dt.Rows.Count;
+            int columns = dt.Columns.Count;
+
+            Table t = doc.AddTable(rows+1, columns);
+            t.Alignment = Alignment.center;
+            t.Design = TableDesign.MediumGrid1Accent5;
+
+            t.Rows[0].Cells[0].Paragraphs.First().Append("Item ID");
+            t.Rows[0].Cells[1].Paragraphs.First().Append("Item Name");
+            t.Rows[0].Cells[2].Paragraphs.First().Append("Description");
+            t.Rows[0].Cells[3].Paragraphs.First().Append("Stock Level");
+            t.Rows[0].Cells[4].Paragraphs.First().Append("Supplier");
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    t.Rows[i+1].Cells[j].Paragraphs.First().Append(dt.Rows[i][j].ToString());
+                }
+            }
+
+            doc.InsertTable(t);
+
+                                    
+            doc.Save();
+
+            Process.Start("WINWORD.EXE", fileName);
+
+
+        }
     }
 }

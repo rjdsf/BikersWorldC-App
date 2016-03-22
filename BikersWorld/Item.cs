@@ -136,6 +136,7 @@ namespace BikersWorld
         #region Methods
         public DataTable Populate_dgvProducts()
         {
+            query = "SELECT * FROM items LEFT JOIN suppliers ON items.supplier_id = suppliers.supplier_id";
             dt = accessDB.getProducts(query);
             return dt;
 
@@ -143,6 +144,7 @@ namespace BikersWorld
 
         public DataTable searchProducts(string value, string optional, string criteriaType)
         {
+            query = "SELECT * FROM items LEFT JOIN suppliers ON items.supplier_id = suppliers.supplier_id";
             switch (criteriaType)
             {
                 case "product":
