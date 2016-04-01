@@ -68,7 +68,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -77,6 +77,7 @@
             this.dgvViewCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvViewCustomers.Location = new System.Drawing.Point(0, 27);
             this.dgvViewCustomers.Name = "dgvViewCustomers";
+            this.dgvViewCustomers.ReadOnly = true;
             this.dgvViewCustomers.Size = new System.Drawing.Size(772, 346);
             this.dgvViewCustomers.TabIndex = 2;
             // 
@@ -91,6 +92,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmViewCustomers";
             this.Text = "frmViewCustomers";
+            this.Load += new System.EventHandler(this.frmViewCustomers_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViewCustomers)).EndInit();

@@ -70,11 +70,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppTools.cs" />
+    <Compile Include="dbEW.cs" />
+    <Compile Include="FormLoad.cs" />
+    <Compile Include="frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCustomer.Designer.cs" />
     <Compile Include="frmAddNewCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAddNewCustomer.Designer.cs">
       <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckCustomers.Designer.cs">
+      <DependentUpon>frmCheckCustomers.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCompletedJobs.cs">
       <SubType>Form</SubType>
@@ -99,6 +111,18 @@
     </Compile>
     <Compile Include="frmOpenJobs.Designer.cs">
       <DependentUpon>frmOpenJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrders1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrders1.Designer.cs">
+      <DependentUpon>frmOrders1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSales.Designer.cs">
+      <DependentUpon>frmSales.cs</DependentUpon>
     </Compile>
     <Compile Include="frmStockControl.cs">
       <SubType>Form</SubType>
@@ -146,6 +170,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sale.cs" />
     <Compile Include="Supplier.cs" />
+    <EmbeddedResource Include="frmAddCustomer.resx" />
+    <EmbeddedResource Include="frmCheckCustomers.resx">
+      <DependentUpon>frmCheckCustomers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCompletedJobs.resx">
       <DependentUpon>frmCompletedJobs.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,11 +183,20 @@
     <EmbeddedResource Include="frmOpenJobs.resx">
       <DependentUpon>frmOpenJobs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOrders1.resx">
+      <DependentUpon>frmOrders1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSales.resx">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStockControl.resx">
       <DependentUpon>frmStockControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTechnicianHub.resx">
       <DependentUpon>frmTechnicianHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewCustomers.resx">
+      <DependentUpon>frmViewCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.cs</DependentUpon>
