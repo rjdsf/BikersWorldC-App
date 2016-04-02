@@ -19,10 +19,7 @@ namespace BikersWorld
             InitializeComponent();
         }
 
-        private void frmSuppliersManagement_Load(object sender, EventArgs e)
-        {
-            dgvSuppList.DataSource = suppSearch.getAllSuppliers();
-        }
+       
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -55,6 +52,11 @@ namespace BikersWorld
 
 
 
+        }
+
+        private void frmSuppliersManagement_Load(object sender, EventArgs e)
+        {
+            dgvSuppList.DataSource = suppSearch.getAllSuppliers();
         }
     }
 }

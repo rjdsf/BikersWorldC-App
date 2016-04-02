@@ -425,6 +425,7 @@
             this.Controls.Add(this.grbSearch);
             this.Name = "frmSuppliersManagement";
             this.Text = "frmSuppliersManagement";
+            this.Load += new System.EventHandler(this.frmSuppliersManagement_Load);
             this.grbEdit.ResumeLayout(false);
             this.grbEdit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuppList)).EndInit();
