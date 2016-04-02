@@ -7,20 +7,19 @@ namespace BikersWorld
 {
     public class Person
     {
+        protected string _Fname;
+        protected string _Title;
+        protected string _Lname;
+        protected string _Address1;
+        protected string _Address2;
+        protected string _Address3;
+        protected string _Telephone1;
+        protected string _Telephone2;
+        protected string _Email;
+        protected string _Postcode;
 
-        private string _Fname;
-        private string _Title;
-        private string _Lname;
-        private string _Address1;
-        private string _Address2;
-        private string _Address3;
-        private string _Telephone1;
-        private string _Telephone2;
-        private string _Email;
-        private string _Postcode;
 
-   
-    
+
         protected string Fname
         {
             get
@@ -38,7 +37,7 @@ namespace BikersWorld
         {
             get
             {
-                return _Title;  
+                return _Title;
             }
             set
             {
