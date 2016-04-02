@@ -141,8 +141,8 @@ namespace BikersWorld
 
 
 
-            string filter = formName;
-            Form appForm = Application.OpenForms[filter];
+       
+            Form appForm = Application.OpenForms[formName];
 
 
 
