@@ -21,10 +21,8 @@ namespace BikersWorld
         private void btnStaffManagement_Click(object sender, EventArgs e)
         {
 
-            frmStaffManagement formStaffManagement = new frmStaffManagement();
-
-            formStaffManagement.Show();
-
+           
+            AppTools.formVerifyAndOpen<frmStaffManagement>("frmStaffManagement");
 
 
         }   
@@ -58,20 +56,26 @@ namespace BikersWorld
 
         private void btnStockControl_Click(object sender, EventArgs e)
         {
-            frmStockControl StockControl = new frmStockControl();
-            StockControl.ShowDialog();
+            
+            AppTools.formVerifyAndOpen<frmStockControl>("frmStockControl");
         }
 
         private void btnProcessJob_Click(object sender, EventArgs e)
         {
-            frmTechnicianHub Technician = new frmTechnicianHub();
-            Technician.ShowDialog();
+            AppTools.formVerifyAndOpen<frmTechnicianHub>("frmTechnicianHub");
         }
 
         private void btnProcessSale_Click(object sender, EventArgs e)
         {
-            frmSales sales = new frmSales();
-            sales.ShowDialog();
+            
+            AppTools.formVerifyAndOpen<frmSales>("frmSales");
+
+
+        }
+
+        private void btnSupplierManagement_Click(object sender, EventArgs e)
+        {
+            AppTools.formVerifyAndOpen<frmSuppliersManagement>("frmSuppliersManagement");
         }
     }
 }

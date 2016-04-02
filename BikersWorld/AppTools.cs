@@ -131,9 +131,32 @@ namespace BikersWorld
                 }
             }
 
-        } 
+        }
         #endregion
 
+
+        // 
+        public static void formVerifyAndOpen<T>(string formName) where T : Form, new()
+        {
+
+
+
+            string filter = formName;
+            Form appForm = Application.OpenForms[filter];
+
+
+
+
+            if (appForm == null)
+            {
+
+                T theForm = new T();
+
+                theForm.Show();
+            }
+
+
+        }
 
     }
 }
