@@ -139,10 +139,8 @@ namespace BikersWorld
         public static void formVerifyAndOpen<T>(string formName) where T : Form, new()
         {
 
-
-
-            string filter = formName;
-            Form appForm = Application.OpenForms[filter];
+       
+            Form appForm = Application.OpenForms[formName];
 
 
 
