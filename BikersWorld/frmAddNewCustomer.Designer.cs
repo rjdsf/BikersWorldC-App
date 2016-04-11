@@ -95,8 +95,9 @@
             // submitToolStripMenuItem
             // 
             this.submitToolStripMenuItem.Name = "submitToolStripMenuItem";
-            this.submitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.submitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.submitToolStripMenuItem.Text = "S&ubmit";
+            this.submitToolStripMenuItem.Click += new System.EventHandler(this.submitToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -306,6 +307,7 @@
             this.btnSubmit.TabIndex = 24;
             this.btnSubmit.Text = "&Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnClear
             // 

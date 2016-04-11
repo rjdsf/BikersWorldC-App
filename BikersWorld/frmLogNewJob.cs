@@ -62,5 +62,36 @@ namespace BikersWorld
         {
 
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            job thisJob = new job();
+            thisJob.CustomerID = Convert.ToInt16(txtCustomerID.Text);
+            thisJob.EmployeeID = Convert.ToInt16(txtEmployeeID.Text);
+            thisJob.Description = txtDescription.Text;
+            thisJob.DateLogged = txtDateLogged.Text;
+            thisJob.DateStarted = txtDateStarted.Text;
+            thisJob.EstimatedCompletionDate = txtEstimatedCompletionDate.Text;
+            thisJob.DateCompleted = txtCompletionDate.Text;
+            try
+            {
+                if (combJobOpenClosed.Text == "Open")
+                {
+                    thisJob.JobOpenClose = 1;
+                }
+                else
+                {
+                    thisJob.JobOpenClose = 2;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please ensure a valid job state is entered!");
+            }
+                            
+
+            thisJob.insertJob(thisJob);
+
+        }
     }
 }

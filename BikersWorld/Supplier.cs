@@ -45,14 +45,14 @@ namespace BikersWorld
 
             _SupplierID = SupplierID;
             _SupplierName = SupplierName;
-            this._Title = Title;
-            this._Address1 = Address1;
-            this._Address2 = Address2;
-            this._Address3 = Address3;
-            this._Postcode = Postcode;
-            this._Telephone1 = Telephone1;
-            this._Telephone2 = Telephone2;
-            this._Email = Email;
+            this.Title = Title;
+            this.Address1 = Address1;
+            this.Address2 = Address2;
+            this.Address3 = Address3;
+            this.Postcode = Postcode;
+            this.Telephone1 = Telephone1;
+            this.Telephone2 = Telephone2;
+            this.Email = Email;
         }
 
         public Supplier()
