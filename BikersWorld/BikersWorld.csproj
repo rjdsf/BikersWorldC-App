@@ -178,6 +178,9 @@
     <Compile Include="sale.cs" />
     <Compile Include="Supplier.cs" />
     <EmbeddedResource Include="frmAddCustomer.resx" />
+    <EmbeddedResource Include="frmAddNewCustomer.resx">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCheckCustomers.resx">
       <DependentUpon>frmCheckCustomers.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogins.resx">
       <DependentUpon>frmLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogNewJob.resx">
+      <DependentUpon>frmLogNewJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOpenJobs.resx">
       <DependentUpon>frmOpenJobs.cs</DependentUpon>

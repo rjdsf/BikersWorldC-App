@@ -56,8 +56,14 @@ namespace BikersWorld
             dt = accessDB.grabAll(query);
             return dt;
         }
-    
-    
+
+        public void insertCustomer(Customer cust, int employ_id)
+        {
+            string query = "INSERT INTO customer(employee_id, title, forename, surname, address_1, address_2, address_3, " +
+                "postcode, telephone_1, telephone_2, email)" +
+            "VALUES ('" + employ_id + "', '" + cust.Title + "', '" + cust.Fname + "', '" + cust.Lname + "', '" + cust.Address1 + "', '" + cust.Address2 + "', '" + cust.Address3 + "', '" + cust.Postcode + "', '" + cust.Telephone1 + "', '" + cust.Telephone2 + "', '" + cust.Email + "')";
+            accessDB.DataInsert(query);
+        }
     }
 
 }
