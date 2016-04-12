@@ -53,18 +53,21 @@
             this.txtDateStarted = new System.Windows.Forms.MaskedTextBox();
             this.txtEstimatedCompletionDate = new System.Windows.Forms.MaskedTextBox();
             this.txtCompletionDate = new System.Windows.Forms.MaskedTextBox();
+            this.lblIDSearch = new System.Windows.Forms.Label();
+            this.txtIDSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblLogNewJob
+            // lblEditJob
             // 
             this.lblEditJob.AutoSize = true;
             this.lblEditJob.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEditJob.Location = new System.Drawing.Point(254, 31);
-            this.lblEditJob.Name = "lblLogNewJob";
-            this.lblEditJob.Size = new System.Drawing.Size(127, 25);
+            this.lblEditJob.Location = new System.Drawing.Point(271, 33);
+            this.lblEditJob.Name = "lblEditJob";
+            this.lblEditJob.Size = new System.Drawing.Size(83, 25);
             this.lblEditJob.TabIndex = 1;
-            this.lblEditJob.Text = "Log New Job";
+            this.lblEditJob.Text = "Edit Job";
             // 
             // menuStrip1
             // 
@@ -109,7 +112,7 @@
             // lblCustomerID
             // 
             this.lblCustomerID.AutoSize = true;
-            this.lblCustomerID.Location = new System.Drawing.Point(22, 82);
+            this.lblCustomerID.Location = new System.Drawing.Point(22, 140);
             this.lblCustomerID.Name = "lblCustomerID";
             this.lblCustomerID.Size = new System.Drawing.Size(65, 13);
             this.lblCustomerID.TabIndex = 3;
@@ -118,7 +121,7 @@
             // lblEmployeeID
             // 
             this.lblEmployeeID.AutoSize = true;
-            this.lblEmployeeID.Location = new System.Drawing.Point(22, 135);
+            this.lblEmployeeID.Location = new System.Drawing.Point(22, 193);
             this.lblEmployeeID.Name = "lblEmployeeID";
             this.lblEmployeeID.Size = new System.Drawing.Size(67, 13);
             this.lblEmployeeID.TabIndex = 4;
@@ -127,7 +130,7 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(22, 194);
+            this.lblDescription.Location = new System.Drawing.Point(22, 252);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(60, 13);
             this.lblDescription.TabIndex = 5;
@@ -136,7 +139,7 @@
             // lblDateLogged
             // 
             this.lblDateLogged.AutoSize = true;
-            this.lblDateLogged.Location = new System.Drawing.Point(22, 255);
+            this.lblDateLogged.Location = new System.Drawing.Point(22, 313);
             this.lblDateLogged.Name = "lblDateLogged";
             this.lblDateLogged.Size = new System.Drawing.Size(69, 13);
             this.lblDateLogged.TabIndex = 6;
@@ -145,7 +148,7 @@
             // lblDateStarted
             // 
             this.lblDateStarted.AutoSize = true;
-            this.lblDateStarted.Location = new System.Drawing.Point(331, 82);
+            this.lblDateStarted.Location = new System.Drawing.Point(331, 140);
             this.lblDateStarted.Name = "lblDateStarted";
             this.lblDateStarted.Size = new System.Drawing.Size(67, 13);
             this.lblDateStarted.TabIndex = 7;
@@ -154,7 +157,7 @@
             // lblEstimatedCompletionDate
             // 
             this.lblEstimatedCompletionDate.AutoSize = true;
-            this.lblEstimatedCompletionDate.Location = new System.Drawing.Point(331, 135);
+            this.lblEstimatedCompletionDate.Location = new System.Drawing.Point(331, 193);
             this.lblEstimatedCompletionDate.Name = "lblEstimatedCompletionDate";
             this.lblEstimatedCompletionDate.Size = new System.Drawing.Size(134, 13);
             this.lblEstimatedCompletionDate.TabIndex = 8;
@@ -163,7 +166,7 @@
             // lblCompletionDate
             // 
             this.lblCompletionDate.AutoSize = true;
-            this.lblCompletionDate.Location = new System.Drawing.Point(331, 194);
+            this.lblCompletionDate.Location = new System.Drawing.Point(331, 252);
             this.lblCompletionDate.Name = "lblCompletionDate";
             this.lblCompletionDate.Size = new System.Drawing.Size(85, 13);
             this.lblCompletionDate.TabIndex = 9;
@@ -172,7 +175,7 @@
             // lblJobOpenClosed
             // 
             this.lblJobOpenClosed.AutoSize = true;
-            this.lblJobOpenClosed.Location = new System.Drawing.Point(331, 255);
+            this.lblJobOpenClosed.Location = new System.Drawing.Point(331, 313);
             this.lblJobOpenClosed.Name = "lblJobOpenClosed";
             this.lblJobOpenClosed.Size = new System.Drawing.Size(90, 13);
             this.lblJobOpenClosed.TabIndex = 10;
@@ -180,7 +183,7 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(107, 175);
+            this.txtDescription.Location = new System.Drawing.Point(107, 233);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(175, 55);
@@ -188,7 +191,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(171, 306);
+            this.btnSubmit.Location = new System.Drawing.Point(168, 364);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(111, 31);
             this.btnSubmit.TabIndex = 36;
@@ -198,7 +201,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(337, 306);
+            this.btnClear.Location = new System.Drawing.Point(334, 364);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(111, 31);
             this.btnClear.TabIndex = 37;
@@ -208,7 +211,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(541, 350);
+            this.btnExit.Location = new System.Drawing.Point(537, 385);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(74, 25);
             this.btnExit.TabIndex = 38;
@@ -218,14 +221,14 @@
             // 
             // txtCustomerID
             // 
-            this.txtCustomerID.Location = new System.Drawing.Point(107, 79);
+            this.txtCustomerID.Location = new System.Drawing.Point(107, 137);
             this.txtCustomerID.Name = "txtCustomerID";
             this.txtCustomerID.Size = new System.Drawing.Size(108, 20);
             this.txtCustomerID.TabIndex = 28;
             // 
             // txtEmployeeID
             // 
-            this.txtEmployeeID.Location = new System.Drawing.Point(107, 132);
+            this.txtEmployeeID.Location = new System.Drawing.Point(107, 190);
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.Size = new System.Drawing.Size(108, 20);
             this.txtEmployeeID.TabIndex = 29;
@@ -239,14 +242,14 @@
             this.combJobOpenClosed.Items.AddRange(new object[] {
             "Open",
             "Closed"});
-            this.combJobOpenClosed.Location = new System.Drawing.Point(467, 255);
+            this.combJobOpenClosed.Location = new System.Drawing.Point(467, 313);
             this.combJobOpenClosed.Name = "combJobOpenClosed";
             this.combJobOpenClosed.Size = new System.Drawing.Size(108, 21);
             this.combJobOpenClosed.TabIndex = 35;
             // 
             // txtDateLogged
             // 
-            this.txtDateLogged.Location = new System.Drawing.Point(107, 255);
+            this.txtDateLogged.Location = new System.Drawing.Point(107, 313);
             this.txtDateLogged.Mask = "00/00/0000 90:00";
             this.txtDateLogged.Name = "txtDateLogged";
             this.txtDateLogged.Size = new System.Drawing.Size(108, 20);
@@ -257,7 +260,7 @@
             // 
             // txtDateStarted
             // 
-            this.txtDateStarted.Location = new System.Drawing.Point(467, 79);
+            this.txtDateStarted.Location = new System.Drawing.Point(467, 137);
             this.txtDateStarted.Mask = "00/00/0000 90:00";
             this.txtDateStarted.Name = "txtDateStarted";
             this.txtDateStarted.Size = new System.Drawing.Size(108, 20);
@@ -267,7 +270,7 @@
             // 
             // txtEstimatedCompletionDate
             // 
-            this.txtEstimatedCompletionDate.Location = new System.Drawing.Point(467, 132);
+            this.txtEstimatedCompletionDate.Location = new System.Drawing.Point(467, 190);
             this.txtEstimatedCompletionDate.Mask = "00/00/0000 90:00";
             this.txtEstimatedCompletionDate.Name = "txtEstimatedCompletionDate";
             this.txtEstimatedCompletionDate.Size = new System.Drawing.Size(108, 20);
@@ -277,7 +280,7 @@
             // 
             // txtCompletionDate
             // 
-            this.txtCompletionDate.Location = new System.Drawing.Point(467, 191);
+            this.txtCompletionDate.Location = new System.Drawing.Point(467, 249);
             this.txtCompletionDate.Mask = "00/00/0000 90:00";
             this.txtCompletionDate.Name = "txtCompletionDate";
             this.txtCompletionDate.Size = new System.Drawing.Size(108, 20);
@@ -285,11 +288,39 @@
             this.txtCompletionDate.Text = "000000000000";
             this.txtCompletionDate.ValidatingType = typeof(System.DateTime);
             // 
+            // lblIDSearch
+            // 
+            this.lblIDSearch.AutoSize = true;
+            this.lblIDSearch.Location = new System.Drawing.Point(168, 83);
+            this.lblIDSearch.Name = "lblIDSearch";
+            this.lblIDSearch.Size = new System.Drawing.Size(75, 13);
+            this.lblIDSearch.TabIndex = 39;
+            this.lblIDSearch.Text = "Job ID Search";
+            // 
+            // txtIDSearch
+            // 
+            this.txtIDSearch.Location = new System.Drawing.Point(253, 80);
+            this.txtIDSearch.Name = "txtIDSearch";
+            this.txtIDSearch.Size = new System.Drawing.Size(127, 20);
+            this.txtIDSearch.TabIndex = 40;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(392, 80);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(62, 20);
+            this.btnSearch.TabIndex = 41;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // frmLogNewJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 384);
+            this.ClientSize = new System.Drawing.Size(623, 422);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtIDSearch);
+            this.Controls.Add(this.lblIDSearch);
             this.Controls.Add(this.txtCompletionDate);
             this.Controls.Add(this.txtEstimatedCompletionDate);
             this.Controls.Add(this.txtDateStarted);
@@ -313,7 +344,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmLogNewJob";
-            this.Text = "Log New Job";
+            this.Text = "Edit Job";
             this.Load += new System.EventHandler(this.frmLogNewJob_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -324,7 +355,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblLogNewJob;
+        private System.Windows.Forms.Label lblEditJob;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem functionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem submitToolStripMenuItem;
@@ -349,5 +380,8 @@
         private System.Windows.Forms.MaskedTextBox txtDateStarted;
         private System.Windows.Forms.MaskedTextBox txtEstimatedCompletionDate;
         private System.Windows.Forms.MaskedTextBox txtCompletionDate;
+        private System.Windows.Forms.Label lblIDSearch;
+        private System.Windows.Forms.TextBox txtIDSearch;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

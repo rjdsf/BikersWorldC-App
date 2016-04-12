@@ -14,10 +14,10 @@ namespace BikersWorld
         private int _CustomerID;
         private int _EmployeeID;
         private string _Description;
-        private string _DateLogged;
-        private string _DateStarted;
-        private string _EstimatedCompletionDate;
-        private string _DateCompleted;
+        private DateTime _DateLogged;
+        private DateTime _DateStarted;
+        private DateTime _EstimatedCompletionDate;
+        private DateTime _DateCompleted;
         private int _JobOpenClose;
 
 
@@ -69,7 +69,7 @@ namespace BikersWorld
             }
         }
 
-        public string DateLogged
+        public DateTime DateLogged
         {
             get
             {
@@ -81,7 +81,7 @@ namespace BikersWorld
             }
         }
 
-        public string DateStarted
+        public DateTime DateStarted
         {
             get
             {
@@ -93,7 +93,7 @@ namespace BikersWorld
             }
         }
 
-        public string EstimatedCompletionDate
+        public DateTime EstimatedCompletionDate
         {
             get
             {
@@ -105,7 +105,7 @@ namespace BikersWorld
             }
         }
 
-        public string DateCompleted
+        public DateTime DateCompleted
         {
             get
             {
