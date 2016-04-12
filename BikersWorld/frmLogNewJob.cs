@@ -69,10 +69,10 @@ namespace BikersWorld
             thisJob.CustomerID = Convert.ToInt16(txtCustomerID.Text);
             thisJob.EmployeeID = Convert.ToInt16(txtEmployeeID.Text);
             thisJob.Description = txtDescription.Text;
-            thisJob.DateLogged = Convert.ToDateTime(txtDateLogged.Text);
-            thisJob.DateStarted = Convert.ToDateTime(txtDateStarted.Text);
-            thisJob.EstimatedCompletionDate = Convert.ToDateTime(txtEstimatedCompletionDate.Text);
-            thisJob.DateCompleted = Convert.ToDateTime(txtCompletionDate.Text);
+            thisJob.DateLogged = txtDateLogged.Text;
+            thisJob.DateStarted = txtDateStarted.Text;
+            thisJob.EstimatedCompletionDate = txtEstimatedCompletionDate.Text;
+            thisJob.DateCompleted = txtCompletionDate.Text;
             try
             {
                 if (combJobOpenClosed.Text == "Open")
@@ -91,11 +91,6 @@ namespace BikersWorld
                             
 
             thisJob.insertJob(thisJob);
-
-        }
-
-        private void txtDateLogged_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
 
         }
     }
