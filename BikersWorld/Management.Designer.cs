@@ -102,6 +102,7 @@
             this.btnSupplierManagement.TabIndex = 1;
             this.btnSupplierManagement.Text = "S&uppliers";
             this.btnSupplierManagement.UseVisualStyleBackColor = true;
+            this.btnSupplierManagement.Click += new System.EventHandler(this.btnSupplierManagement_Click);
             // 
             // groupBox2
             // 

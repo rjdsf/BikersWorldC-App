@@ -10,15 +10,26 @@ namespace BikersWorld
     {
         dbEW accessDB = new dbEW();
         DataTable dt = new DataTable();
+        private int _JobID;
+        private int _CustomerID;
+        private int _EmployeeID;
+        private string _Description;
+        private string _DateLogged;
+        private string _DateStarted;
+        private string _EstimatedCompletionDate;
+        private string _DateCompleted;
+        private int _JobOpenClose;
+
 
         public int JobID
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _JobID;
             }
             set
             {
+                _JobID = value;
             }
         }
 
@@ -26,10 +37,11 @@ namespace BikersWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _CustomerID;
             }
             set
             {
+                _CustomerID = value;
             }
         }
 
@@ -37,10 +49,11 @@ namespace BikersWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _EmployeeID;
             }
             set
             {
+                _EmployeeID = value;
             }
         }
 
@@ -48,21 +61,23 @@ namespace BikersWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _Description;
             }
             set
             {
+                _Description = value;
             }
         }
 
-        public String DateLogged
+        public string DateLogged
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _DateLogged;
             }
             set
             {
+                _DateLogged = value;
             }
         }
 
@@ -70,10 +85,11 @@ namespace BikersWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _DateStarted;
             }
             set
             {
+                _DateStarted = value;
             }
         }
 
@@ -81,10 +97,11 @@ namespace BikersWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _EstimatedCompletionDate;
             }
             set
             {
+                _EstimatedCompletionDate = value;
             }
         }
 
@@ -92,22 +109,30 @@ namespace BikersWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _DateCompleted;
             }
             set
             {
+                _DateCompleted = value;
             }
         }
 
-        public bool JobOpenClose
+        public int JobOpenClose
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _JobOpenClose;
             }
             set
             {
+                _JobOpenClose = value;
             }
+        }
+
+        public void insertJob(job currentJob)
+        {
+            string query = "INSERT INTO jobs(customer_id, employee_id, description, date_logged, date_started, estimated_completion, date_completed, job_open_close) VALUES ('" + currentJob.CustomerID + "', '" + currentJob.EmployeeID + "', '" + currentJob.Description + "', '" + currentJob.DateLogged + "', '" + currentJob.DateStarted + "', '" + currentJob.EstimatedCompletionDate + "', '" + currentJob.DateCompleted + "', '" + currentJob.JobOpenClose + "')";
+            accessDB.DataInsert(query);
         }
 
         public DataTable getOpenJobs()
