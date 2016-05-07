@@ -40,6 +40,8 @@
             this.btnPrintStockLevels = new System.Windows.Forms.Button();
             this.btnAdjustStock = new System.Windows.Forms.Button();
             this.dgvProductInformation = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.doDomethingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpStockAdjustment = new System.Windows.Forms.GroupBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtStockAdjust = new System.Windows.Forms.TextBox();
@@ -56,14 +58,12 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
             this.lblItemName = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.doDomethingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grbProductSearch.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductInformation)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.grpStockAdjustment.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tkbStock)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbProductSearch
@@ -175,7 +175,21 @@
             this.dgvProductInformation.Size = new System.Drawing.Size(720, 231);
             this.dgvProductInformation.TabIndex = 2;
             this.dgvProductInformation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductInformation_CellClick);
+            this.dgvProductInformation.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductInformation_CellContentClick);
             this.dgvProductInformation.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProductInformation_ColumnHeaderMouseClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.doDomethingToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 26);
+            // 
+            // doDomethingToolStripMenuItem
+            // 
+            this.doDomethingToolStripMenuItem.Name = "doDomethingToolStripMenuItem";
+            this.doDomethingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.doDomethingToolStripMenuItem.Text = "Do Domething";
             // 
             // grpStockAdjustment
             // 
@@ -200,6 +214,7 @@
             this.grpStockAdjustment.TabIndex = 3;
             this.grpStockAdjustment.TabStop = false;
             this.grpStockAdjustment.Text = "Stock Adjustment";
+            this.grpStockAdjustment.Enter += new System.EventHandler(this.grpStockAdjustment_Enter);
             // 
             // btnSave
             // 
@@ -341,19 +356,6 @@
             this.lblItemName.TabIndex = 0;
             this.lblItemName.Text = "Item:";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.doDomethingToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 26);
-            // 
-            // doDomethingToolStripMenuItem
-            // 
-            this.doDomethingToolStripMenuItem.Name = "doDomethingToolStripMenuItem";
-            this.doDomethingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.doDomethingToolStripMenuItem.Text = "Do Domething";
-            // 
             // frmStockControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,10 +372,10 @@
             this.grbProductSearch.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductInformation)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.grpStockAdjustment.ResumeLayout(false);
             this.grpStockAdjustment.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tkbStock)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

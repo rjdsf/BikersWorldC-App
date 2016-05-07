@@ -151,6 +151,26 @@ namespace BikersWorld
 
         }
 
+        public DataTable searchJob(string value, string optional, string criteriaType)
+        {
+            string query = "SELECT * FROM jobs";
+            switch (criteriaType)
+            {
+                case "CustomerID":
+                    dt = accessDB.grabAll(query + " WHERE customer_id = " + value);
+                    break;
+                case "Description":
+                    dt = accessDB.grabAll(query + " WHERE description LIKE '%" + value + "%'");
+                    break;
+                case "both":
+                    dt = accessDB.grabAll(query + " WHERE customer_id = " + value + " AND description LIKE '%" + optional + "%'");
+
+                    break;
+            }
+            return dt;
+
+        }
+
 
 
     }
