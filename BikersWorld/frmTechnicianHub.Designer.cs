@@ -41,6 +41,7 @@
             this.logNewJobToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewOpenJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewCompletedJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editOpenJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewCustomersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +50,7 @@
             this.btnViewCustomers = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnEditOpenJobs = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,10 +102,10 @@
             // btnNewCustomer
             // 
             this.btnNewCustomer.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewCustomer.Location = new System.Drawing.Point(30, 173);
+            this.btnNewCustomer.Location = new System.Drawing.Point(30, 225);
             this.btnNewCustomer.Name = "btnNewCustomer";
             this.btnNewCustomer.Size = new System.Drawing.Size(122, 45);
-            this.btnNewCustomer.TabIndex = 4;
+            this.btnNewCustomer.TabIndex = 5;
             this.btnNewCustomer.Text = "Add New &Customer";
             this.btnNewCustomer.UseVisualStyleBackColor = true;
             this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
@@ -148,7 +150,8 @@
             this.jobsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logNewJobToolStripMenuItem,
             this.viewOpenJobsToolStripMenuItem,
-            this.viewCompletedJobsToolStripMenuItem});
+            this.viewCompletedJobsToolStripMenuItem,
+            this.editOpenJobsToolStripMenuItem});
             this.jobsToolStripMenuItem.Name = "jobsToolStripMenuItem";
             this.jobsToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.jobsToolStripMenuItem.Text = "Jo&bs";
@@ -173,6 +176,13 @@
             this.viewCompletedJobsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.viewCompletedJobsToolStripMenuItem.Text = "View Complete&d Jobs";
             this.viewCompletedJobsToolStripMenuItem.Click += new System.EventHandler(this.viewCompletedJobsToolStripMenuItem_Click);
+            // 
+            // editOpenJobsToolStripMenuItem
+            // 
+            this.editOpenJobsToolStripMenuItem.Name = "editOpenJobsToolStripMenuItem";
+            this.editOpenJobsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.editOpenJobsToolStripMenuItem.Text = "Edi&t Open Jobs";
+            this.editOpenJobsToolStripMenuItem.Click += new System.EventHandler(this.editOpenJobsToolStripMenuItem_Click);
             // 
             // customerToolStripMenuItem
             // 
@@ -211,7 +221,7 @@
             // 
             this.lblCustomer.AutoSize = true;
             this.lblCustomer.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomer.Location = new System.Drawing.Point(33, 156);
+            this.lblCustomer.Location = new System.Drawing.Point(33, 208);
             this.lblCustomer.Name = "lblCustomer";
             this.lblCustomer.Size = new System.Drawing.Size(63, 14);
             this.lblCustomer.TabIndex = 8;
@@ -220,10 +230,10 @@
             // btnViewCustomers
             // 
             this.btnViewCustomers.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewCustomers.Location = new System.Drawing.Point(180, 173);
+            this.btnViewCustomers.Location = new System.Drawing.Point(180, 225);
             this.btnViewCustomers.Name = "btnViewCustomers";
             this.btnViewCustomers.Size = new System.Drawing.Size(122, 45);
-            this.btnViewCustomers.TabIndex = 5;
+            this.btnViewCustomers.TabIndex = 6;
             this.btnViewCustomers.Text = "&View Customers";
             this.btnViewCustomers.UseVisualStyleBackColor = true;
             this.btnViewCustomers.Click += new System.EventHandler(this.btnViewCustomers_Click);
@@ -231,7 +241,7 @@
             // btnLogOut
             // 
             this.btnLogOut.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Location = new System.Drawing.Point(303, 239);
+            this.btnLogOut.Location = new System.Drawing.Point(299, 283);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(82, 30);
             this.btnLogOut.TabIndex = 7;
@@ -242,7 +252,7 @@
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(390, 239);
+            this.btnExit.Location = new System.Drawing.Point(386, 283);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(82, 30);
             this.btnExit.TabIndex = 8;
@@ -250,12 +260,24 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnEditOpenJobs
+            // 
+            this.btnEditOpenJobs.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditOpenJobs.Location = new System.Drawing.Point(30, 154);
+            this.btnEditOpenJobs.Name = "btnEditOpenJobs";
+            this.btnEditOpenJobs.Size = new System.Drawing.Size(122, 45);
+            this.btnEditOpenJobs.TabIndex = 4;
+            this.btnEditOpenJobs.Text = "&Edit Open Jobs";
+            this.btnEditOpenJobs.UseVisualStyleBackColor = true;
+            this.btnEditOpenJobs.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmTechnicianHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(480, 277);
+            this.ClientSize = new System.Drawing.Size(480, 325);
+            this.Controls.Add(this.btnEditOpenJobs);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnViewCustomers);
@@ -303,6 +325,8 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.ToolStripMenuItem editOpenJobsToolStripMenuItem;
+        private System.Windows.Forms.Button btnEditOpenJobs;
     }
 }
 

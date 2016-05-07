@@ -34,7 +34,6 @@
             this.submitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblCustomerID = new System.Windows.Forms.Label();
             this.lblEmployeeID = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
             this.lblDateLogged = new System.Windows.Forms.Label();
@@ -43,16 +42,20 @@
             this.lblCompletionDate = new System.Windows.Forms.Label();
             this.lblJobOpenClosed = new System.Windows.Forms.Label();
             this.txtDescription = new System.Windows.Forms.TextBox();
-            this.txtDateStarted = new System.Windows.Forms.TextBox();
-            this.txtEstimatedCompletionDate = new System.Windows.Forms.TextBox();
-            this.txtCompletionDate = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.txtCustomerID = new System.Windows.Forms.TextBox();
             this.txtEmployeeID = new System.Windows.Forms.TextBox();
-            this.txtDateLogged = new System.Windows.Forms.TextBox();
             this.combJobOpenClosed = new System.Windows.Forms.ComboBox();
+            this.txtDateLogged = new System.Windows.Forms.MaskedTextBox();
+            this.txtDateStarted = new System.Windows.Forms.MaskedTextBox();
+            this.txtEstimatedCompletionDate = new System.Windows.Forms.MaskedTextBox();
+            this.txtCompletionDate = new System.Windows.Forms.MaskedTextBox();
+            this.lblDisclaimer = new System.Windows.Forms.Label();
+            this.lblCustomerID = new System.Windows.Forms.Label();
+            this.lblCustomerName = new System.Windows.Forms.Label();
+            this.lblAnd = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,15 +109,6 @@
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // lblCustomerID
-            // 
-            this.lblCustomerID.AutoSize = true;
-            this.lblCustomerID.Location = new System.Drawing.Point(22, 82);
-            this.lblCustomerID.Name = "lblCustomerID";
-            this.lblCustomerID.Size = new System.Drawing.Size(65, 13);
-            this.lblCustomerID.TabIndex = 3;
-            this.lblCustomerID.Text = "Customer ID";
-            // 
             // lblEmployeeID
             // 
             this.lblEmployeeID.AutoSize = true;
@@ -127,7 +121,7 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(22, 194);
+            this.lblDescription.Location = new System.Drawing.Point(27, 215);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(60, 13);
             this.lblDescription.TabIndex = 5;
@@ -138,36 +132,36 @@
             this.lblDateLogged.AutoSize = true;
             this.lblDateLogged.Location = new System.Drawing.Point(22, 255);
             this.lblDateLogged.Name = "lblDateLogged";
-            this.lblDateLogged.Size = new System.Drawing.Size(69, 13);
+            this.lblDateLogged.Size = new System.Drawing.Size(73, 13);
             this.lblDateLogged.TabIndex = 6;
-            this.lblDateLogged.Text = "Date Logged";
+            this.lblDateLogged.Text = "Date Logged*";
             // 
             // lblDateStarted
             // 
             this.lblDateStarted.AutoSize = true;
             this.lblDateStarted.Location = new System.Drawing.Point(331, 82);
             this.lblDateStarted.Name = "lblDateStarted";
-            this.lblDateStarted.Size = new System.Drawing.Size(67, 13);
+            this.lblDateStarted.Size = new System.Drawing.Size(71, 13);
             this.lblDateStarted.TabIndex = 7;
-            this.lblDateStarted.Text = "Date Started";
+            this.lblDateStarted.Text = "Date Started*";
             // 
             // lblEstimatedCompletionDate
             // 
             this.lblEstimatedCompletionDate.AutoSize = true;
             this.lblEstimatedCompletionDate.Location = new System.Drawing.Point(331, 135);
             this.lblEstimatedCompletionDate.Name = "lblEstimatedCompletionDate";
-            this.lblEstimatedCompletionDate.Size = new System.Drawing.Size(134, 13);
+            this.lblEstimatedCompletionDate.Size = new System.Drawing.Size(138, 13);
             this.lblEstimatedCompletionDate.TabIndex = 8;
-            this.lblEstimatedCompletionDate.Text = "Estimated Completion Date";
+            this.lblEstimatedCompletionDate.Text = "Estimated Completion Date*";
             // 
             // lblCompletionDate
             // 
             this.lblCompletionDate.AutoSize = true;
             this.lblCompletionDate.Location = new System.Drawing.Point(331, 194);
             this.lblCompletionDate.Name = "lblCompletionDate";
-            this.lblCompletionDate.Size = new System.Drawing.Size(85, 13);
+            this.lblCompletionDate.Size = new System.Drawing.Size(89, 13);
             this.lblCompletionDate.TabIndex = 9;
-            this.lblCompletionDate.Text = "Completion Date";
+            this.lblCompletionDate.Text = "Completion Date*";
             // 
             // lblJobOpenClosed
             // 
@@ -185,27 +179,6 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(175, 55);
             this.txtDescription.TabIndex = 30;
-            // 
-            // txtDateStarted
-            // 
-            this.txtDateStarted.Location = new System.Drawing.Point(466, 79);
-            this.txtDateStarted.Name = "txtDateStarted";
-            this.txtDateStarted.Size = new System.Drawing.Size(108, 20);
-            this.txtDateStarted.TabIndex = 32;
-            // 
-            // txtEstimatedCompletionDate
-            // 
-            this.txtEstimatedCompletionDate.Location = new System.Drawing.Point(466, 132);
-            this.txtEstimatedCompletionDate.Name = "txtEstimatedCompletionDate";
-            this.txtEstimatedCompletionDate.Size = new System.Drawing.Size(108, 20);
-            this.txtEstimatedCompletionDate.TabIndex = 33;
-            // 
-            // txtCompletionDate
-            // 
-            this.txtCompletionDate.Location = new System.Drawing.Point(466, 191);
-            this.txtCompletionDate.Name = "txtCompletionDate";
-            this.txtCompletionDate.Size = new System.Drawing.Size(108, 20);
-            this.txtCompletionDate.TabIndex = 34;
             // 
             // btnSubmit
             // 
@@ -251,13 +224,6 @@
             this.txtEmployeeID.Size = new System.Drawing.Size(108, 20);
             this.txtEmployeeID.TabIndex = 29;
             // 
-            // txtDateLogged
-            // 
-            this.txtDateLogged.Location = new System.Drawing.Point(107, 252);
-            this.txtDateLogged.Name = "txtDateLogged";
-            this.txtDateLogged.Size = new System.Drawing.Size(108, 20);
-            this.txtDateLogged.TabIndex = 31;
-            // 
             // combJobOpenClosed
             // 
             this.combJobOpenClosed.AutoCompleteCustomSource.AddRange(new string[] {
@@ -267,26 +233,101 @@
             this.combJobOpenClosed.Items.AddRange(new object[] {
             "Open",
             "Closed"});
-            this.combJobOpenClosed.Location = new System.Drawing.Point(467, 255);
+            this.combJobOpenClosed.Location = new System.Drawing.Point(470, 255);
             this.combJobOpenClosed.Name = "combJobOpenClosed";
-            this.combJobOpenClosed.Size = new System.Drawing.Size(107, 21);
+            this.combJobOpenClosed.Size = new System.Drawing.Size(108, 21);
             this.combJobOpenClosed.TabIndex = 35;
+            // 
+            // txtDateLogged
+            // 
+            this.txtDateLogged.Location = new System.Drawing.Point(107, 255);
+            this.txtDateLogged.Mask = "00/00/0000 90:00";
+            this.txtDateLogged.Name = "txtDateLogged";
+            this.txtDateLogged.Size = new System.Drawing.Size(108, 20);
+            this.txtDateLogged.TabIndex = 31;
+            this.txtDateLogged.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDateStarted
+            // 
+            this.txtDateStarted.Location = new System.Drawing.Point(470, 79);
+            this.txtDateStarted.Mask = "00/00/0000 90:00";
+            this.txtDateStarted.Name = "txtDateStarted";
+            this.txtDateStarted.Size = new System.Drawing.Size(108, 20);
+            this.txtDateStarted.TabIndex = 32;
+            this.txtDateStarted.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtEstimatedCompletionDate
+            // 
+            this.txtEstimatedCompletionDate.Location = new System.Drawing.Point(470, 132);
+            this.txtEstimatedCompletionDate.Mask = "00/00/0000 90:00";
+            this.txtEstimatedCompletionDate.Name = "txtEstimatedCompletionDate";
+            this.txtEstimatedCompletionDate.Size = new System.Drawing.Size(108, 20);
+            this.txtEstimatedCompletionDate.TabIndex = 33;
+            this.txtEstimatedCompletionDate.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtCompletionDate
+            // 
+            this.txtCompletionDate.Location = new System.Drawing.Point(470, 191);
+            this.txtCompletionDate.Mask = "00/00/0000 90:00";
+            this.txtCompletionDate.Name = "txtCompletionDate";
+            this.txtCompletionDate.Size = new System.Drawing.Size(108, 20);
+            this.txtCompletionDate.TabIndex = 34;
+            this.txtCompletionDate.ValidatingType = typeof(System.DateTime);
+            // 
+            // lblDisclaimer
+            // 
+            this.lblDisclaimer.AutoSize = true;
+            this.lblDisclaimer.Location = new System.Drawing.Point(22, 356);
+            this.lblDisclaimer.Name = "lblDisclaimer";
+            this.lblDisclaimer.Size = new System.Drawing.Size(175, 13);
+            this.lblDisclaimer.TabIndex = 39;
+            this.lblDisclaimer.Text = "*Dates must be logged in US format";
+            // 
+            // lblCustomerID
+            // 
+            this.lblCustomerID.AutoSize = true;
+            this.lblCustomerID.Location = new System.Drawing.Point(22, 82);
+            this.lblCustomerID.Name = "lblCustomerID";
+            this.lblCustomerID.Size = new System.Drawing.Size(65, 13);
+            this.lblCustomerID.TabIndex = 3;
+            this.lblCustomerID.Text = "Customer ID";
+            // 
+            // lblCustomerName
+            // 
+            this.lblCustomerName.AutoSize = true;
+            this.lblCustomerName.Location = new System.Drawing.Point(17, 180);
+            this.lblCustomerName.Name = "lblCustomerName";
+            this.lblCustomerName.Size = new System.Drawing.Size(82, 13);
+            this.lblCustomerName.TabIndex = 40;
+            this.lblCustomerName.Text = "Customer Name";
+            // 
+            // lblAnd
+            // 
+            this.lblAnd.AutoSize = true;
+            this.lblAnd.Location = new System.Drawing.Point(46, 197);
+            this.lblAnd.Name = "lblAnd";
+            this.lblAnd.Size = new System.Drawing.Size(25, 13);
+            this.lblAnd.TabIndex = 41;
+            this.lblAnd.Text = "and";
             // 
             // frmLogNewJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 384);
-            this.Controls.Add(this.combJobOpenClosed);
+            this.Controls.Add(this.lblAnd);
+            this.Controls.Add(this.lblCustomerName);
+            this.Controls.Add(this.lblDisclaimer);
+            this.Controls.Add(this.txtCompletionDate);
+            this.Controls.Add(this.txtEstimatedCompletionDate);
+            this.Controls.Add(this.txtDateStarted);
             this.Controls.Add(this.txtDateLogged);
+            this.Controls.Add(this.combJobOpenClosed);
             this.Controls.Add(this.txtEmployeeID);
             this.Controls.Add(this.txtCustomerID);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.txtCompletionDate);
-            this.Controls.Add(this.txtEstimatedCompletionDate);
-            this.Controls.Add(this.txtDateStarted);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.lblJobOpenClosed);
             this.Controls.Add(this.lblCompletionDate);
@@ -317,7 +358,6 @@
         private System.Windows.Forms.ToolStripMenuItem submitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.Label lblCustomerID;
         private System.Windows.Forms.Label lblEmployeeID;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label lblDateLogged;
@@ -326,15 +366,19 @@
         private System.Windows.Forms.Label lblCompletionDate;
         private System.Windows.Forms.Label lblJobOpenClosed;
         private System.Windows.Forms.TextBox txtDescription;
-        private System.Windows.Forms.TextBox txtDateStarted;
-        private System.Windows.Forms.TextBox txtEstimatedCompletionDate;
-        private System.Windows.Forms.TextBox txtCompletionDate;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtCustomerID;
         private System.Windows.Forms.TextBox txtEmployeeID;
-        private System.Windows.Forms.TextBox txtDateLogged;
         private System.Windows.Forms.ComboBox combJobOpenClosed;
+        private System.Windows.Forms.MaskedTextBox txtDateLogged;
+        private System.Windows.Forms.MaskedTextBox txtDateStarted;
+        private System.Windows.Forms.MaskedTextBox txtEstimatedCompletionDate;
+        private System.Windows.Forms.MaskedTextBox txtCompletionDate;
+        private System.Windows.Forms.Label lblDisclaimer;
+        private System.Windows.Forms.Label lblCustomerID;
+        private System.Windows.Forms.Label lblCustomerName;
+        private System.Windows.Forms.Label lblAnd;
     }
 }
