@@ -77,5 +77,10 @@ namespace BikersWorld
         {
             AppTools.formVerifyAndOpen<frmSuppliersManagement>("frmSuppliersManagement");
         }
+
+        private void btnJobReports_Click(object sender, EventArgs e)
+        {
+            AppTools.formVerifyAndOpen<frmReportJob>("frmReportJob");
+        }
     }
 }

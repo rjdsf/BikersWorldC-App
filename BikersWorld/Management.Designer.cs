@@ -133,6 +133,7 @@
             this.btnJobReports.TabIndex = 1;
             this.btnJobReports.Text = "&Jobs";
             this.btnJobReports.UseVisualStyleBackColor = true;
+            this.btnJobReports.Click += new System.EventHandler(this.btnJobReports_Click);
             // 
             // btnSalesReports
             // 

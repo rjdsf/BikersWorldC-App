@@ -51,3 +51,5 @@ C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersW
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.Properties.Resources.resources
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csproj.GenerateResource.Cache
 C:\Users\Elliott\Documents\GitHub\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmEditOpenJob.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmEditOpenJob.resources
+I:\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmReportJob.resources
