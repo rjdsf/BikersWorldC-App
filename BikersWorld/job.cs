@@ -8,7 +8,9 @@ namespace BikersWorld
 {
     public class job
     {
+        string query;
         dbEW accessDB = new dbEW();
+        dbNC accessdbNC = new dbNC();
         DataTable dt = new DataTable();
         private int _JobID;
         private int _CustomerID;
@@ -169,6 +171,75 @@ namespace BikersWorld
             }
             return dt;
 
+        }
+
+        public DataTable getOpenJobs(string type)
+        {
+
+            switch (type)
+            {
+                case "Month":
+                    //DateTime moment = new DateTime();
+                    //int thisMonth = moment.Month;
+                    //query = "SELECT * FROM jobs WHERE MONTH(date_logged) = " + thisMonth.ToString() + " AND job_open_close = 2";
+
+                    //this is a test query delete when finished //////////////////////////////////////
+                    query = "SELECT * FROM jobs WHERE MONTH(date_logged) = 12 AND job_open_close = 2";
+                    /////////////////////////////////////////////////////////////////////////////////
+
+                    dt = accessdbNC.getJobStatistics(query);
+
+                    break;
+                case "All":
+                    query = "SELECT * FROM jobs WHERE job_open_close = 2";
+                    dt = accessdbNC.getJobStatistics(query);
+                    break;
+
+            }
+
+            return dt;
+        }
+        public DataTable getClosedJobs(string type)
+        {
+            switch (type)
+            {
+                case "Month":
+                    DateTime moment = new DateTime();
+                    int thisMonth = moment.Month;
+                    //query = "SELECT * FROM jobs WHERE MONTH(date_logged) = " + thisMonth.ToString() + " AND job_open_close = 1";
+
+                    //this is a test query delete when finished //////////////////////////////////////
+                    query = "SELECT * FROM jobs WHERE MONTH(date_logged) = 1 AND job_open_close = 1";
+                    /////////////////////////////////////////////////////////////////////////////////
+
+                    dt = accessdbNC.getJobStatistics(query);
+                    break;
+                case "All":
+                    query = "SELECT * FROM jobs WHERE job_open_close = 1";
+                    dt = accessdbNC.getJobStatistics(query);
+                    break;
+
+            }
+            return dt;
+        }
+
+        public DataTable customReport(string startDate, string endDate, string type)
+        {
+            switch (type)
+            {
+                case "Open":
+                    query = "SELECT * FROM jobs WHERE date_logged >= '" + startDate + "' AND date_logged <= '" + endDate + "' AND job_open_close = 2;";
+                    break;
+                case "Closed":
+                    query = "SELECT * FROM jobs WHERE date_logged >= '" + startDate + "' AND date_logged <= '" + endDate + "' AND job_open_close = 1";
+                    break;
+                default:
+                    query = "SELECT * FROM jobs WHERE date_logged >= '" + startDate + "' AND date_logged <= '" + endDate + "';";
+                    break;
+            }
+
+            dt = accessdbNC.getCustomReport(query);
+            return dt;
         }
 
 
