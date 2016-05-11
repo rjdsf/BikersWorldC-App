@@ -124,6 +124,7 @@
             this.btnEmployeeReports.TabIndex = 2;
             this.btnEmployeeReports.Text = "&Employees";
             this.btnEmployeeReports.UseVisualStyleBackColor = true;
+            this.btnEmployeeReports.Click += new System.EventHandler(this.btnEmployeeReports_Click);
             // 
             // btnJobReports
             // 
@@ -143,6 +144,7 @@
             this.btnSalesReports.TabIndex = 0;
             this.btnSalesReports.Text = "S&ales";
             this.btnSalesReports.UseVisualStyleBackColor = true;
+            this.btnSalesReports.Click += new System.EventHandler(this.btnSalesReports_Click);
             // 
             // groupBox3
             // 
