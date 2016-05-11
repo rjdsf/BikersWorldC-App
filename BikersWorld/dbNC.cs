@@ -539,5 +539,43 @@ namespace BikersWorld
             return dt;
 
         }
+
+        public DataTable getEmployeeDetails(string query)
+        {
+            DataTable dt = new DataTable();
+            if (this.openConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                dt.Load(dataReader);
+                dataReader.Close();
+                this.closeConnection();
+            }
+            else
+            {
+                MessageBox.Show("Some error has occur when connecting to the database, please contact your Network Administrator");
+            }
+
+            return dt;
+        }
+
+        public DataTable individualPersonSales(string query)
+        {
+            DataTable dt = new DataTable();
+            if (this.openConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                dt.Load(dataReader);
+                dataReader.Close();
+                this.closeConnection();
+            }
+            else
+            {
+                MessageBox.Show("Some error has occur when connecting to the database, please contact your Network Administrator");
+            }
+
+            return dt;
+        }
     }
 }

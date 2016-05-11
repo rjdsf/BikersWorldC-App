@@ -1,18 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace BikersWorld
 {
     public class Employee : Person
     {
 
+        DataTable dt = new DataTable();
+        dbNC accessDB = new dbNC();
+
         protected int _EmployeeID;
         protected string _Username;
         protected string _Password;
         protected int _JobRoleID;
-      
+
+        
+        public Employee() { }
+
         public int EmployeeID
         {
             get
@@ -81,6 +89,22 @@ namespace BikersWorld
             this.Telephone2 = _Telephone2;
 
 
+        }
+
+        public DataTable getEmployeeIDandName()
+        {
+            string query = "SELECT employee_id, forename, surname FROM employee";
+
+            try
+            {
+                dt = accessDB.getEmployeeDetails(query);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Oops! Something went wrong, try again. If problem persists please contact your Network Administrator", "Internal Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return dt;
         }
     }
 }

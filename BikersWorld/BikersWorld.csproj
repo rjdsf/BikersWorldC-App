@@ -133,6 +133,12 @@
     <Compile Include="frmReportJob.Designer.cs">
       <DependentUpon>frmReportJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportSales.Designer.cs">
+      <DependentUpon>frmReportSales.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sale.cs" />
+    <Compile Include="salesNC.cs" />
     <Compile Include="Supplier.cs" />
     <EmbeddedResource Include="frmAddCustomer.resx" />
     <EmbeddedResource Include="frmAddNewCustomer.resx">
@@ -218,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportJob.resx">
       <DependentUpon>frmReportJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportSales.resx">
+      <DependentUpon>frmReportSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSales.resx">
       <DependentUpon>frmSales.cs</DependentUpon>
