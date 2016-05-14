@@ -214,6 +214,7 @@ namespace BikersWorld
 
         }
 
+<<<<<<< HEAD
         private void dgvStaffList_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -237,6 +238,11 @@ namespace BikersWorld
             grbEdit.Text = "Staff N:" + selectedID;
             grbOptions.Visible = true;
             btnLogin.Visible = true;
+=======
+        private void dgvStaffList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+>>>>>>> refs/remotes/origin/master
         }
 
         

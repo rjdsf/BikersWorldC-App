@@ -113,5 +113,17 @@ namespace BikersWorld
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmEditOpenJob frm = new frmEditOpenJob();
+            frm.Show();
+        }
+
+        private void editOpenJobsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEditOpenJob frm = new frmEditOpenJob();
+            frm.Show();
+        }
     }
 }
