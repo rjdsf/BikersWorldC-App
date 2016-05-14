@@ -246,6 +246,11 @@ namespace BikersWorld
 
         }
 
+        private void dgvStaffList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         
     }
 }

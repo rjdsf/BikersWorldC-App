@@ -301,5 +301,15 @@ namespace BikersWorld
 
 
         }
+
+        private void grpStockAdjustment_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvProductInformation_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
