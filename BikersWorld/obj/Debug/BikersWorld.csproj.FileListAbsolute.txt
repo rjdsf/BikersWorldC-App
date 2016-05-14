@@ -82,3 +82,27 @@ E:\New folder\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmStaffManagem
 E:\New folder\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmLogin.resources
 E:\New folder\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.Properties.Resources.resources
 E:\New folder\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csproj.GenerateResource.Cache
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\bin\Debug\BikersWorld.exe
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\bin\Debug\BikersWorld.pdb
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\bin\Debug\DocX.dll
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\bin\Debug\MySql.Data.dll
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csprojResolveAssemblyReference.cache
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmAddCustomer.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmAddNewCustomer.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmCheckCustomers.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmCompletedJobs.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmLogins.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmLogNewJob.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmOpenJobs.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmOrders1.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmSales.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmStockControl.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmSuppliersManagement.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmSuppliersProducts.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmTechnicianHub.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmViewCustomers.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmManagement.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmStaffManagement.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmLogin.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.Properties.Resources.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csproj.GenerateResource.Cache
