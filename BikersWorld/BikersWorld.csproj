@@ -137,6 +137,12 @@
     <Compile Include="frmSuppliersManagement.Designer.cs">
       <DependentUpon>frmSuppliersManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSuppliersProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuppliersProducts.Designer.cs">
+      <DependentUpon>frmSuppliersProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTechnicianHub.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     <Compile Include="sale.cs" />
     <Compile Include="Supplier.cs" />
     <EmbeddedResource Include="frmAddCustomer.resx" />
+    <EmbeddedResource Include="frmAddNewCustomer.resx">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCheckCustomers.resx">
       <DependentUpon>frmCheckCustomers.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogins.resx">
       <DependentUpon>frmLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogNewJob.resx">
+      <DependentUpon>frmLogNewJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOpenJobs.resx">
       <DependentUpon>frmOpenJobs.cs</DependentUpon>
@@ -201,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSuppliersManagement.resx">
       <DependentUpon>frmSuppliersManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuppliersProducts.resx">
+      <DependentUpon>frmSuppliersProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTechnicianHub.resx">
       <DependentUpon>frmTechnicianHub.cs</DependentUpon>

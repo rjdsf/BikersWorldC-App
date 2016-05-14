@@ -7,20 +7,20 @@ namespace BikersWorld
 {
     public class Person
     {
-        protected string _Fname;
-        protected string _Title;
-        protected string _Lname;
-        protected string _Address1;
-        protected string _Address2;
-        protected string _Address3;
-        protected string _Telephone1;
-        protected string _Telephone2;
-        protected string _Email;
-        protected string _Postcode;
+        private string _Fname;
+        private string _Title;
+        private string _Lname;
+        private string _Address1;
+        private string _Address2;
+        private string _Address3;
+        private string _Telephone1;
+        private string _Telephone2;
+        private string _Email;
+        private string _Postcode;
 
 
 
-        protected string Fname
+        public string Fname
         {
             get
             {
@@ -33,7 +33,7 @@ namespace BikersWorld
         }
 
 
-        protected string Title
+        public string Title
         {
             get
             {
@@ -46,7 +46,7 @@ namespace BikersWorld
             }
         }
 
-        protected string Lname
+        public string Lname
         {
             get
             {
@@ -58,7 +58,7 @@ namespace BikersWorld
             }
         }
 
-        protected string Address1
+        public string Address1
         {
             get
             {
@@ -70,7 +70,7 @@ namespace BikersWorld
             }
         }
 
-        protected string Address2
+        public string Address2
         {
             get
             {
@@ -82,7 +82,7 @@ namespace BikersWorld
             }
         }
 
-        protected string Address3
+        public string Address3
         {
             get
             {
@@ -94,7 +94,7 @@ namespace BikersWorld
             }
         }
 
-        protected string Telephone1
+        public string Telephone1
         {
             get
             {
@@ -106,7 +106,7 @@ namespace BikersWorld
             }
         }
 
-        protected string Telephone2
+        public string Telephone2
         {
             get
             {
@@ -118,7 +118,7 @@ namespace BikersWorld
             }
         }
 
-        protected string Email
+        public string Email
         {
             get
             {
@@ -130,7 +130,7 @@ namespace BikersWorld
             }
         }
 
-        protected string Postcode
+        public string Postcode
         {
             get
             {

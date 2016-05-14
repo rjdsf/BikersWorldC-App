@@ -8,13 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-#region ToDoList
-
-    /* 
-     * Log Out Button Functionality
-    */
-
-#endregion
 
 namespace BikersWorld
 {

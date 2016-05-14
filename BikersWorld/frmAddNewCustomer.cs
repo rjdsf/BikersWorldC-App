@@ -69,5 +69,94 @@ namespace BikersWorld
         {
             this.Close();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            int employee_id = 0;
+            bool formCompleted = validate_form();
+            if (formCompleted)
+            {
+                Customer cust = new Customer();
+                cust.Title = combTitle.Text;
+                cust.Fname = txtForename.Text;
+                cust.Lname = txtSurname.Text;
+                cust.Address1 = txtAddress1.Text;
+                cust.Address2 = txtAddress2.Text;
+                cust.Address3 = txtAddress3.Text;
+                cust.Postcode = txtPostcode.Text;
+                cust.Telephone1 = txtTelephone1.Text;
+                cust.Telephone2 = txtTelephone2.Text;
+                cust.Email = txtEmail.Text;
+
+                try {
+                    int employ = Convert.ToInt32(txtEmployeeID.Text);
+                    employee_id = employ;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Please enter a valid employee number");
+                }
+
+                cust.insertCustomer(cust, employee_id);
+
+            }
+            else
+            {
+                MessageBox.Show("Please complete all fields.");
+            }
+        }
+
+        public bool validate_form()
+        {
+            bool validate = true;
+            foreach (Control x in this.Controls)
+            {
+                if (x is TextBox)
+                {
+                    if (((TextBox)x).Text == String.Empty)
+                    {
+                        validate = false;
+                        break;
+                    }
+                }
+            }
+            return validate;
+        }
+
+        private void submitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int employee_id = 0;
+            bool formCompleted = validate_form();
+            if (formCompleted)
+            {
+                Customer cust = new Customer();
+                cust.Title = combTitle.Text;
+                cust.Fname = txtForename.Text;
+                cust.Lname = txtSurname.Text;
+                cust.Address1 = txtAddress1.Text;
+                cust.Address2 = txtAddress2.Text;
+                cust.Address3 = txtAddress3.Text;
+                cust.Postcode = txtPostcode.Text;
+                cust.Telephone1 = txtTelephone1.Text;
+                cust.Telephone2 = txtTelephone2.Text;
+                cust.Email = txtEmail.Text;
+
+                try
+                {
+                    int employ = Convert.ToInt32(txtEmployeeID.Text);
+                    employee_id = employ;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Please enter a valid employee number");
+                }
+
+                cust.insertCustomer(cust, employee_id);
+            }
+            else
+            {
+                MessageBox.Show("Please complete all fields.");
+            }
+        }
     }
 }

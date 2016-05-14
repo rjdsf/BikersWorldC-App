@@ -170,8 +170,9 @@
             this.dgvStaffList.ReadOnly = true;
             this.dgvStaffList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStaffList.Size = new System.Drawing.Size(573, 188);
-            this.dgvStaffList.TabIndex = 1;
-            this.dgvStaffList.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvStaffList_RowHeaderMouseClick);
+            this.dgvStaffList.TabIndex = 2;
+            this.dgvStaffList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaffList_CellClick);
+
             // 
             // txtFirstNameEdit
             // 
