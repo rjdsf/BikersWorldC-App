@@ -43,7 +43,7 @@ namespace BikersWorld
             string _Address2, string _Address3, string _Postcode, string _Telephone1, string _Telephone2, string _Email)
         {
 
-<<<<<<< HEAD
+
             SupplierID = _SupplierID;
             SupplierName = _SupplierName;
          
@@ -54,7 +54,7 @@ namespace BikersWorld
             this.Telephone1 = _Telephone1;
             this.Telephone2 = _Telephone2;
             this.Email = _Email;
-=======
+
             _SupplierID = SupplierID;
             _SupplierName = SupplierName;
             this.Title = Title;
@@ -65,7 +65,7 @@ namespace BikersWorld
             this.Telephone1 = Telephone1;
             this.Telephone2 = Telephone2;
             this.Email = Email;
->>>>>>> refs/remotes/origin/master
+
         }
 
         public supplier()
