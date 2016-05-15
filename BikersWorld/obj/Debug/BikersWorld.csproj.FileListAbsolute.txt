@@ -17,7 +17,6 @@ D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmR
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmSales.resources
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmStockControl.resources
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmSuppliersManagement.resources
-D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmSuppliersProducts.resources
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmTechnicianHub.resources
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmViewCustomers.resources
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmManagement.resources
@@ -28,3 +27,5 @@ D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.cspr
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.exe
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.pdb
 D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.csprojResolveAssemblyReference.cache
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmManagementProducts.resources
+D:\OneDrive\VisualStudio\BikersWorldC-App\BikersWorld\obj\Debug\BikersWorld.frmReportEmployees.resources

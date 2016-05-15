@@ -115,5 +115,10 @@ namespace BikersWorld
             return false;
 
         }
+        public  DataTable getSupplIdList()
+        {
+            return mydb.getDataTable("select supplier_id, supplier_name From suppliers");
+
+        }
     }
 }
